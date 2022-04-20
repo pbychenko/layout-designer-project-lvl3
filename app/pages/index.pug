@@ -1,22 +1,16 @@
 doctype html
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(rel='icon' type='image/x-icon' href='favicon.ico')
+  title Hexlet chat
+  link(rel='stylesheet' href='./styles/app.css')      
+body
+  .container-xxl.pt-3.px-4
+    .row
+      aside.col-4
+        include blocks/menu.pug
+        include blocks/contacts.pug
 
-    title Hexlet
-
-    link(rel='stylesheet' href='./styles/app.css')
-    
-  body
-    //- Подключение шапки сайта
-    include blocks/header.pug
-    //- include blocks/profile.pug
-
-    main
-      h1 главная
-      button.btn.btn-primary Сохранить
-
-    //- Подключение футера сайта
-    include blocks/footer.pug
+      main.col-8 
+        | Правая часть 
