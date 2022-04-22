@@ -1,15 +1,15 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "utils/test.scss";
 @import "variables.scss";
-
+@import "mixins.scss";
 
 $enable-shadows: true;
 
-// body {
-//     border-radius: 1.5rem;
-//     border-color: map-get($theme-colors, "gray");
-//     // background-color: green;
-// }
+// @include hide-scrollbar;
+
+body {
+  @include hide-scrollbar;
+}
 // nav {
 //     background-color: green;
 // }

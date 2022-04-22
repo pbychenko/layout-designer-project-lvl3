@@ -37,17 +37,19 @@
   }
 
 h1 Контакты
-form.search-form
+form.search-form.overflow-auto
   input#search(type='text' placeholder='Поиск по контакстам...')
 
+.contacts.overflow-auto
   each people, letter in contacts
-    h2=letter
-    ul
-      each user in people
-        li
-          .d-flex
-            img(src=user.avatar)
-            .d-flex
-              div
-                p= user.name
-                p= user.status
+    h2.text-muted.mb-3= letter
+    ul.list-group 
+      each user in people        
+        li.list-group-item.mb-1
+          a(href="#").text-decoration-none
+            .d-flex.align-items-center.justify-content-around
+              img(src=user.avatar).w-25.h-25.rounded-circle
+              .d-flex
+                div
+                  h3.h2.small= user.name
+                  p.small= user.status
