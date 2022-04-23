@@ -1,19 +1,19 @@
-nav.d-flex.justify-content-between.bg-info
+nav.d-flex.justify-content-around.bg-primary.align-items-center
   div
     img(src='../images/icons/logo.svg', style="height: 24px;")
-  ul.list-inline
-    li.list-inline-item
-      a(href="#")
+  ul(role="tablist").list-inline.d-flex.align-items-center.nav#navTab
+    li.list-inline-item.nav-item(role="presentation")
+      a(href="#", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected="true")#contacts-tab.active
         img(src='../images/icons/people.svg')
-        span Контакты 
-    li.list-inline-item
-      a(href="#")
+        span.text-light Контакты 
+    li.list-inline-item.nav-item(role="presentation")
+      a(href="#", data-bs-target="#messages", data-bs-toggle="tab", aria-selected="false")#messages-tab
         img(src='../images/icons/chat.svg')
-        span Сообщения 
-    li.list-inline-item
-      a(href="#")
+        span.text-light Сообщения 
+    li.list-inline-item(role="presentation")
+      a(href="#").nav-link
         img(src='../images/icons/person.svg')
-        span Профиль 
+        span.text-light Профиль 
 
 
 

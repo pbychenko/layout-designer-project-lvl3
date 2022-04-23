@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const buildPug = () => {
   console.log('Компиляция Pug');
 
-  return src('app/pages/*.pug')
+  return src('app/pages/index.pug')
     .pipe(pug())
     .pipe(dest('build/'))
     .pipe(browserSync.stream());

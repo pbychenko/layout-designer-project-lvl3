@@ -10,7 +10,13 @@ body
     .row
       aside.col-4
         include blocks/menu.pug
-        include blocks/contacts.pug
+        .tab-content
+          #contacts.tab-pane.fade.show.active
+            include blocks/contacts.pug
+          #messages.tab-panes.fade
+            include blocks/messages.pug
 
       main.col-8 
-        | Правая часть 
+        | Правая часть
+script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous")
+  
