@@ -13,12 +13,13 @@ body
         .tab-content
           #contacts.tab-pane.fade.show.active
             include blocks/contacts.pug
-          #messages.tab-panes.fade
+          #messages.tab-pane.fade
             include blocks/messages.pug
-          #profile.tab-panes.fade
+          #profile.tab-pane.fade
             include blocks/profile.pug
 
-      main.col-8        
+      main.col-8.d-flex.align-items-center.justify-content-center
+        .hello.text-center        
           img(src="../images/avatar_1.jpg").rounded-circle
           h2 Привет, Кодовёнок
           p Выбери чат, чтобы начать общаться

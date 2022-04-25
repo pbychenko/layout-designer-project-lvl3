@@ -35,9 +35,10 @@
       avatar: "/images/avatar_6.jpg"
     }],
   }
+
 h1 Контакты
-form.search-form
-  input#search(type='text' placeholder='Поиск по контакстам...')
+form.search-form.mb-3
+  input#search(type='text' placeholder='Поиск по контактам...').p-3.form-control.border-0
 
 .contacts.overflow-auto.mh-50.ps-4
   each people, letter in contacts

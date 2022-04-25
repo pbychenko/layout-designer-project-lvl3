@@ -3,15 +3,15 @@ nav.d-flex.justify-content-around.bg-primary.align-items-center
     img(src='../images/icons/logo.svg', style="height: 24px;")
   ul(role="tablist").list-inline.d-flex.align-items-center.nav#navTab
     li.list-inline-item.nav-item(role="presentation")
-      a(href="#", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected="true")#contacts-tab.active
+      a(href="#", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected="true", aria-controls="contacts")#contacts-tab.active
         img(src='../images/icons/people.svg')
         span.text-light Контакты 
     li.list-inline-item.nav-item(role="presentation")
-      a(href="#", data-bs-target="#messages", data-bs-toggle="tab", aria-selected="false")#messages-tab
+      a(href="#", data-bs-target="#messages", data-bs-toggle="tab", aria-selected="false", aria-controls="messages")#messages-tab
         img(src='../images/icons/chat.svg')
         span.text-light Сообщения 
     li.list-inline-item.nav-item(role="presentation")
-      a(href="#", data-bs-target="#profile", data-bs-toggle="tab", aria-selected="false")#profile-tab
+      a(href="#", data-bs-target="#profile", data-bs-toggle="tab", aria-selected="false", aria-controls="profile")#profile-tab
         img(src='../images/icons/person.svg')
         span.text-light Профиль 
 
