@@ -1,17 +1,27 @@
 doctype html
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(rel='icon' type='image/x-icon' href='favicon.ico')
+  title Hexlet chat
+  link(rel='stylesheet' href='./styles/app.css')      
+body
+  .contianer.container.bg-secondary.pt-1
+    .container-xxl.pt-3.px-4.mt-3.bg-white(style="border-radius: 1rem")
+      .row
+        aside.col-4
+          include blocks/menu.pug
+          .tab-content
+            #contacts.tab-pane.fade.show.active
+              include blocks/contacts.pug
+            #messages.tab-pane.fade
+              include blocks/messages.pug
+            #profile.tab-pane.fade
+              include blocks/profile.pug
 
-    title Hexlet
-
-    link(rel='stylesheet' href='./styles/app.css')
-  body
-    //- Подключение шапки сайта
-    //- include blocks/header.pug
-
-    main
-      h1 чffат
-      .cr-pointer.test-0-hover какой то блок
+        main.col-8.d-flex.align-items-center.justify-content-center
+          .hello.text-center        
+            img(src="../images/avatar_1.jpg").rounded-circle
+            h2 Привет, Кодовёнок
+            p Выбери чат, чтобы начать общаться
+script(src="js/bootstrap.bundle.min.js")

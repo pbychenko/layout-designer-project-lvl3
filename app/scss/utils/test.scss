@@ -28,3 +28,24 @@ $utilities: map-merge(
     )
   )
 );
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "radius": (
+//       property: transition,
+//       class: radius,
+//       values: (
+//         left-top: all 0.5s,
+//         left: all 1s,
+//         right: all 1.5s,
+//         2: all 2s,
+//       ),
+//     ),
+//     "shadow":
+//       map-merge(
+//         map-get($utilities, "shadow"),
+//         ( state: hover ),
+//     ),
+//   ),
+// );
