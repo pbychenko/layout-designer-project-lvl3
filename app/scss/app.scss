@@ -1,7 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "utils/test.scss";
+// $enable-negative-margins: true;
 @import "variables.scss";
+@import "general.scss";
+@import "utils/test.scss";
 @import "mixins.scss";
+@import "components/menu.scss";
 
 $enable-shadows: true;
 
@@ -13,3 +16,4 @@ body {
 // nav {
 //     background-color: green;
 // }
+// @import "custom.scss";

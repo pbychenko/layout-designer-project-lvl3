@@ -1,0 +1,9 @@
+body {
+	background-color: map-get($theme-colors,'gray');
+}
+
+//убрать отсюда
+.main {
+	border: 1px solid map-get($theme-colors,'gray');
+	border-radius: 1rem
+}

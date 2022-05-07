@@ -5,24 +5,22 @@ head
   meta(rel='icon' type='image/x-icon' href='favicon.ico')
   title Hexlet chat
   link(rel='stylesheet' href='./styles/app.css')      
-body
-  .contianer.container.bg-secondary.pt-1
-    .container-xxl.pt-3.px-4.mt-3.bg-white(style="border-radius: 1rem")
-      .row
-        aside.col-4
-          include blocks/menu.pug
-          .tab-content
-            #contacts.tab-pane.fade.show.active
-              include blocks/contacts.pug
-            #messages.tab-pane.fade
-              include blocks/messages.pug
-            #profile.tab-pane.fade
-              include blocks/profile.pug
-
-        main.col-8.d-flex.align-items-center.justify-content-center
-          .hello.text-center        
-            img(src="../images/avatar_1.jpg").rounded-circle
-            h2 Привет, Кодовёнок
-            p Выбери чат, чтобы начать общаться
+body  
+  .container-xxl.mt-3.bg-white.main.p-0
+    .row
+      aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column
+        include blocks/menu.pug
+        .tab-content.pt-5.px-4
+          #contacts.tab-pane.fade.show.active
+            include blocks/contacts.pug
+          #messages.tab-pane.fade
+            include blocks/messages.pug
+          #profile.tab-pane.fade
+            include blocks/profile.pug
+      main.col-md-8.d-flex.align-items-center.justify-content-center.d-none.d-md-block
+        .hello.text-center        
+          img(src="../images/avatar_1.jpg").rounded-circle
+          h2 Привет, Кодовёнок
+          p Выбери чат, чтобы начать общаться
 script(src="js/bootstrap.bundle.min.js")
   

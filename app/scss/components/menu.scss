@@ -1,0 +1,27 @@
+nav {
+	background-color: map-get($theme-colors,'primary');
+	height: 4.5rem;
+	// margin-left: -1.5rem;
+	// margin-top: -1rem;
+	border-top-left-radius: 1rem;
+	img {
+		filter: brightness(0) invert(1);
+	}
+	ul img {
+		height: 25px;
+		width: 18px;
+		// filter: invert(12%) sepia(63%) saturate(6234%) hue-rotate(246deg) brightness(87%) contrast(156%);
+		// filter: brightness(0) invert(1);
+	}	
+}
+
+
+@media (max-width: $max-mob-width) {
+	nav {
+			// margin-left: -1.5rem;
+			// margin-right: -1.5rem;
+			// margin-top: 0;
+		border-top-left-radius: 0;
+	}
+}
+
