@@ -1,18 +1,20 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
 // $enable-negative-margins: true;
-@import "variables.scss";
-@import "general.scss";
-@import "utils/test.scss";
-@import "mixins.scss";
-@import "components/menu.scss";
 
 $enable-shadows: true;
 
-// @include hide-scrollbar;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "general.scss";
 
-body {
-  @include hide-scrollbar;
-}
+@import "mixins.scss";
+@import "components/menu.scss";
+@import "components/contacts.scss";
+
+
+
+
+
+
 // nav {
 //     background-color: green;
 // }

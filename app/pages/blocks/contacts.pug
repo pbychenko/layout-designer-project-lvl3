@@ -37,20 +37,20 @@
   }
 
 h1 Контакты
-form.search-form.mb-3
+form.search-form.mb-5
   input#search(type='text' placeholder='Поиск по контактам...').p-3.form-control.border-0
 
-.contacts.overflow-auto.mh-50.ps-4
-  each people, letter in contacts
-    h2.text-muted.mb-3= letter
-    ul.list-group.list-group-flush
-      each user in people        
-        li.list-group-item.mb-1
-          a(href="#").text-decoration-none.link-dark
-            .d-flex.align-items-center.justify-content-around
-              img(src=user.avatar).w-25.h-25.rounded-circle
-              .d-flex
-                div
-                  p
-                    strong= user.name
-                  p.small= user.status
+//- .contacts.mt-5
+each people, letter in contacts
+  h2.h6.text-muted.mb-3= letter
+  ul.list-group.list-group-flush.mb-5
+    each user in people        
+      li.list-group-item.mb-3.py-0.shadow-sm
+        a(href="#").text-decoration-none.link-dark
+          .d-flex.align-items-center
+            img(src=user.avatar).rounded-circle
+            .d-flex
+              div.p-4
+                p.mb-0
+                  strong= user.name
+                p.small= user.status

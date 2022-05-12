@@ -1,9 +1,16 @@
 body {
 	background-color: map-get($theme-colors,'gray');
+	// height: 100vh;
 }
 
 //убрать отсюда
 .main {
-	border: 1px solid map-get($theme-colors,'gray');
-	border-radius: 1rem
+	border: 1px solid map-get($theme-colors, 'gray');
+	border-radius: 1rem;
+	height: calc(100vh - 2rem);
+	// border: solid 1px red;
+}
+
+.container-xxl {
+	// padding-top: -1rem;
 }
