@@ -1,3 +1,71 @@
-.
-  p chats
-  
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      message: "Онлайн",
+      avatar: "/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      message: "Онлайн",
+      avatar: "/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      avatar: "/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      message: "Был онлайн 3 часа назад",
+      avatar: "/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      message: "Жопа",
+      avatar: "/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      message: "Был ужас",
+      avatar: "/images/avatar_6.jpg"
+    }],
+  }
+
+h1 Сообщения
+form.search-form.mb-5
+  input#search(type='text' placeholder='Поиск по сообщениям...').p-3.form-control.border-0
+
+//- #chats(style="overflow-y: scroll; overflow-x:hidden").mh-50.ps-4
+each people, letter in contacts
+  h2.text-muted.mb-3= letter
+  ul.list-group.list-group-flush.mb-5
+    each user in people        
+      li.list-group-item.mb-3.py-0.shadow-sm
+        .d-flex.align-items-center
+            img(src=user.avatar).rounded-circle
+            .d-flex
+              div.p-4
+                p.mb-0
+                  strong= user.name
+                p.small.w-50= user.message
+            p
+              | 1.43
+
+//- each people, letter in contacts
+//-   h2.h6.text-muted.mb-3= letter
+//-   ul.list-group.list-group-flush.mb-5
+//-     each user in people        
+//-       li.list-group-item.mb-3.py-0.shadow-sm
+//-         a(href="#").text-decoration-none.link-dark
+//-           .d-flex.align-items-center
+//-             img(src=user.avatar).rounded-circle
+//-             .d-flex
+//-               div.p-4
+//-                 p.mb-0
+//-                   strong= user.name
+//-                 p.small= user.status
