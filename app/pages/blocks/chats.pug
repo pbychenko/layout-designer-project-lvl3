@@ -7,7 +7,7 @@
     },
     {
       name: "Джедай Падаванов",
-      message: "Привет, скоро третий проеddddddddssssssкт? ",// Уже скоро надо будет выложить",
+      message: "Привет, скоро третий проект? Уже скоро надо будет выложить",// Уже скоро надо будет выложить",
       avatar: "/images/avatar_2.jpg",
       time: "10:12"
     },
@@ -18,7 +18,7 @@
       time: "08:53"
     }]
 
-h1 Чаты
+h2.mb-4 Чаты
 form.search-form.mb-5
   input#search(type='text' placeholder='Поиск по сообщениям...').p-3.form-control.border-0
 
@@ -28,23 +28,9 @@ ul.list-group.list-group-flush.mb-5
       a(href="#").text-decoration-none.link-dark
         .d-flex.align-items-center
           img(src=user.avatar).rounded-circle
-          div
-            .d-flex.justify-content-between            
+          .d-flex.align-items-center
+            div.p-4
               p.mb-0
                 strong= user.name
-              p.text-muted.small.time= user.time
-            p.small.text-muted.message.m-0= user.message               
-            
-
-//- ul.list-group.list-group-flush.mb-5
-//-   each user in people        
-//-     li.list-group-item.mb-3.py-0.shadow-sm
-//-       a(href="#").text-decoration-none.link-dark
-//-         .d-flex.align-items-center
-//-           img(src=user.avatar).rounded-circle
-//-           .d-flex
-//-             div.p-4
-//-               p.mb-0
-//-                 strong= user.name
-//-               p.small.text-muted.mb-0.message= user.message               
-//-             p.text-muted.small.time= user.time
+              p.small.text-muted.mb-0.message= user.message               
+            p.text-muted.small.time= user.time

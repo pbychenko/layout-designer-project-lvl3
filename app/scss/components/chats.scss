@@ -12,7 +12,7 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		// width: 250px;
+		width: 286px;
 		// border: solid 1px red;
 	}
 	// .time {
@@ -29,6 +29,9 @@
 	// }
 	#chats {
 		height: 83vh;
+		.message {
+			width: 236px;
+		}
 	}
 }
 

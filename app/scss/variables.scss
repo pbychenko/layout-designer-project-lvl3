@@ -1,3 +1,5 @@
+$enable-shadows: true;
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -28,15 +30,3 @@ $theme-colors: (
   "dark":       #343A40,
   "gray": #EFEFEF
 );
-
-// $background-colors: (
-//   "primary":    #4545A5,
-//   "secondary":  #6C757D,
-//   "success":    #28A745,
-//   "info":       #17A2B8,
-//   "warning":    #FFC107,
-//   "danger":     #DC3545,
-//   "light":      #FBFBFB,
-//   "dark":       #343A40,
-//   "gray": #EFEFEF
-// );

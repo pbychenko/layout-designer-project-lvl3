@@ -1,6 +1,11 @@
 body {
 	background-color: map-get($theme-colors,'gray');
+	
 	// height: 100vh;
+}
+
+h2,h3,h4,h6 {
+	font-weight: 700;
 }
 
 //убрать отсюда

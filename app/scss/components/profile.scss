@@ -1,0 +1,15 @@
+#profile {
+	@include hide-scrollbar;
+
+	.card img {
+		height: 90px;
+		width: 90px;
+	}
+
+	height: calc(100vh - 9rem);
+
+	.list-group {
+		font-size: 12.8px;
+	}
+}
+
