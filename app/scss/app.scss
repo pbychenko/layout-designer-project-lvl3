@@ -2,9 +2,9 @@
 
 $enable-shadows: true;
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "variables.scss";
 // @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "general.scss";
 
 @import "mixins.scss";

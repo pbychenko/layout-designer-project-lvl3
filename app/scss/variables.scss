@@ -1,38 +1,21 @@
-$grid-breakpoints: map-merge(
-    $grid-breakpoints,
-    (
-        xxl: 1600px,        
-    )    
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
 );
 
-$container-max-widths: map-merge(    
-    $container-max-widths,
-    (
-        xxl: 1540px,        
-    )
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1540px,
 );
-
-
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1600px,
-// );
-
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px,
-//   xxl: 1540px,
-// );
 
 $max-mob-width: 414px;
-
-
 
 $theme-colors: (
   "primary":    #4545A5,
