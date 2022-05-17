@@ -11,16 +11,17 @@ body.pt-3
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column
         include blocks/menu.pug
         .tab-content.pt-5.px-4
-          #contacts.tab-pane.fade
+          #contacts.tab-pane.fade.show.active
             include blocks/contacts.pug
           #chats.tab-pane.fade
             include blocks/chats.pug
-          #profile.tab-pane.fade.show.active
+          #profile.tab-pane.fade
             include blocks/profile.pug
-      main.col-md-8.d-flex.align-items-center.justify-content-center.d-none.d-md-block
-        .hello.text-center        
+      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none
+        .text-center
           img(src="../images/avatar_1.jpg").rounded-circle
-          h2 Привет, Кодовёнок
-          p Выбери чат, чтобы начать общаться
+          p.mb-0
+            strong Привет, Кодовёнок
+          p.small.text-muted Выбери чат, чтобы начать общаться
 script(src="js/bootstrap.bundle.min.js")
   

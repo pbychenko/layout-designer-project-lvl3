@@ -1,54 +1,92 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/utilities";
+// @import "../../../node_modules/bootstrap/scss/functions";
+// @import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/utilities";
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "background-color": (
-      property: background-color,
-      class: test,
-      state: hover,
-      values: (
-				0: yellow,
-				25: black,
-			)
-		)
-	)
-);
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "cursor": (
-      property: cursor,
-      class: cr,
-      // responsive: true,
-      values: auto pointer grab,
-    )
-  )
-);
+.radius-left-top {
+  border-top-left-radius: 1rem;
+}
+
+.radius-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.radius-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.radius {
+  border-radius: 1rem;
+}
+
+.border-md-bottom {
+  border-bottom: 1px solid #efefef !important;
+}
+
+.border-lg-top {
+  border-top: 1px solid #efefef !important;
+}
+
+.border-sm {
+  border: 1px solid #efefef !important;
+}
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "background-color": (
+//       property: background-color,
+//       class: test,
+//       state: hover,
+//       values: (
+// 				0: yellow,
+// 				25: black,
+// 			)
+// 		)
+// 	)
+// );
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "cursor": (
+//       property: cursor,
+//       class: cr,
+//       // responsive: true,
+//       values: auto pointer grab,
+//     )
+//   )
+// );
 
 // $utilities: map-merge(
 //   $utilities,
 //   (
 //     "radius": (
-//       property: transition,
-//       class: radius,
+//       responsive,
+//       property: border-radius,
 //       values: (
-//         left-top: all 0.5s,
-//         left: all 1s,
-//         right: all 1.5s,
-//         2: all 2s,
+//         null: 1rem,        
 //       ),
 //     ),
-//     "shadow":
-//       map-merge(
-//         map-get($utilities, "shadow"),
-//         ( state: hover ),
+//     "radius-right": (
+//       responsive,
+//       property: border-radius,
+//       values: (
+//         null: 1rem,        
+//       ),
 //     ),
+
 //   ),
 // );
+
+// "border-bottom": (
+//       property: border-bottom,
+//       values: (
+//         null: $border-width solid $border-color,
+//         0: 0,
+//       )
+//     ),
 
 // $utilities: map-merge(
 //   $utilities,
