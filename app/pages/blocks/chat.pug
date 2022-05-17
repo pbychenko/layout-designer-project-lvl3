@@ -1,8 +1,51 @@
+-
+  var people = [{
+      name: "Вениамин Редакторович",
+      message: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+      avatar: "/images/avatar_4.jpg",
+      time: "8 минут назад"
+    },
+    {
+      name: "",
+      message: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+      avatar: "/images/avatar_1.jpg",
+      time: "5 минут назад"
+    },
+    {
+      name: "Вениамин Редакторович",
+      message: "Лады",
+      avatar: "/images/avatar_4.jpg",
+      time: "5 минут назад"
+    },
+    {
+      name: "",
+      message: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+      avatar: "/images/avatar_1.jpg",
+      time: "3 минуты назад"
+    },
+    {
+      name: "Вениамин Редакторович",
+      message: "о_О",
+      avatar: "/images/avatar_4.jpg",
+      time: "Только что"
+    }]
+
 #chat
   .head.d-flex.align-items-end
     img(src="/images/avatar_4.jpg").rounded-circle
     .ps-4
       p.mb-0
         strong Вениамин Редакторович
-      p.small Онлайн
-  .messages тут сообщения
+      p.small.mb-0 Онлайн
+  ul.list-group.list-group-flush.mb-5.messages
+    each user in people        
+      li.list-group-item.mb-3.py-0.shadow-sm
+        a(href="#").text-decoration-none.link-dark
+          .d-flex.align-items-center
+            img(src=user.avatar).rounded-circle
+            .d-flex.align-items-center
+              div.p-4
+                p.mb-0
+                  strong= user.name
+                p.small.text-muted.mb-0.message= user.message               
+              p.text-muted.small.time= user.time

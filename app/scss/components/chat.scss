@@ -1,5 +1,4 @@
 #chat {
-	// @include hide-scrollbar;
 	.head {
 		img {
 			height: 50px;
@@ -9,20 +8,9 @@
 		height: 4.5rem;
 
 	}
-	
-	// height: 65vh;
-
-	height: calc(100vh - 10.5rem);
-	.message {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		width: 286px;
-		// border: solid 1px red;
+	.messages {
+		@include hide-scrollbar;		
 	}
-	// .time {
-	// 	padding-top: 23px;
-	// }
 }
 
 // @media (max-width: $max-mob-width) {
