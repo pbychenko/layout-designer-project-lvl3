@@ -1,10 +1,15 @@
 #chat {
 	// @include hide-scrollbar;
+	.head {
+		img {
+			height: 50px;
+			width: 50px;
+		}
 
-	img {
-		height: 50px;
-		width: 50px;
+		height: 4.5rem;
+
 	}
+	
 	// height: 65vh;
 
 	height: calc(100vh - 10.5rem);
