@@ -1,5 +1,3 @@
-// $enable-negative-margins: true;
-// @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "general.scss";
@@ -8,10 +6,4 @@
 @import "components/contacts.scss";
 @import "components/chats.scss";
 @import "components/profile.scss";
-@import "components/chat.scss";
-// @import "utils/test.scss";
-
-// nav {
-//     background-color: green;
-// }
-// @import "custom.scss";
+@import "components/dialog.scss";

@@ -1,0 +1,80 @@
+-
+  var people = [{
+      name: "Вениамин Редакторович",
+      message: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+      avatar: "/images/avatar_4.jpg",
+      time: "8 минут назад"
+    },
+    {
+      name: "",
+      message: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+      avatar: "/images/avatar_1.jpg",
+      time: "5 минут назад"
+    },
+    {
+      name: "Вениамин Редакторович",
+      message: "Лады",
+      avatar: "/images/avatar_4.jpg",
+      time: "5 минут назад"
+    },
+    {
+      name: "",
+      message: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+      avatar: "/images/avatar_1.jpg",
+      time: "3 минуты назад"
+    },
+    {
+      name: "Вениамин Редакторович",
+      message: "о_О",
+      avatar: "/images/avatar_4.jpg",
+      time: "Только что"
+    }]
+
+.head.d-flex.align-items-end
+  img(src="/images/avatar_4.jpg").rounded-circle
+  .ps-4
+    p.mb-0
+      strong Вениамин Редакторович
+    p.small.mb-0 Онлайн
+.mt-5.messages.mx-0.d-flex.flex-column
+  each user in people  
+    if user.name == ''
+      .d-flex.align-items-end.mb-3.p-0.test.mx-5.align-self-end
+        .d-flex.align-items-end.mb-3.p-0.test.mx-5
+        img(src=user.avatar).rounded-circle
+        .p-4.message.ms-3.bg-primary
+          p.text-white.mb-0.message= user.message
+          hr.my-2.text-muted           
+          p.text-white.small.time.mb-0= user.time
+    else
+      .d-flex.align-items-end.mb-3.p-0.test.mx-5
+        img(src=user.avatar).rounded-circle
+        .p-4.message.ms-3
+          p.mb-0
+            strong= user.name
+          p.text-muted.mb-0.message= user.message
+          hr.my-2.text-white        
+          p.text-muted.small.time.mb-0= user.time
+
+//- ul.list-group.mt-5.messages.mx-0.d-flex.justify-content-end.flex-column
+//-   each user in people
+//-     if user.name == ''          
+//-       li.list-group-item.mb-3.p-0.border-0
+//-         a(href="#").text-decoration-none.link-dark
+//-           .d-flex.align-items-end
+//-             img(src=user.avatar).rounded-circle
+//-             if user.name == ''
+//-               .p-4.message.ms-3.bg-primary
+//-                 //- p.mb-0
+//-                 //-   strong= user.name
+//-                 p.text-white.mb-0.message= user.message
+//-                 hr.my-2.text-muted           
+//-                 p.text-white.small.time.mb-0= user.time
+//-             else
+//-               .p-4.message.ms-3
+//-                 p.mb-0
+//-                   strong= user.name
+//-                 p.text-muted.mb-0.message= user.message
+//-                 hr.my-2.text-white        
+//-                 p.text-muted.small.time.mb-0= user.time
+

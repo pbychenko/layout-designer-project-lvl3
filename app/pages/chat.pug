@@ -6,9 +6,9 @@ head
   title Hexlet chat
   link(rel='stylesheet' href='./styles/app.css')      
 body.pt-3
-  .container-xxl.bg-white.main.p-0
+  .container-xxl.bg-white.main
     .row
-      aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column
+      aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
         include blocks/menu.pug
         .tab-content.pt-5.px-4
           #contacts.tab-pane.fade
@@ -18,6 +18,6 @@ body.pt-3
           #profile.tab-pane.fade
             include blocks/profile.pug
       //- main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none
-      main.col-md-8.p-0
-        include blocks/chat.pug
+      #dialog.col-md-8.p-0
+        include blocks/dialog.pug
 script(src="js/bootstrap.bundle.min.js")

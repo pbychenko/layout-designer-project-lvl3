@@ -36,7 +36,6 @@ const browserSyncJob = () => {
   watch('app/scss/**/*.scss', buildSass);
   watch('./build/*.html', reload);
   watch('app/pages/**/*.pug', buildPug);
-
 };
 
 exports.server = browserSyncJob;
