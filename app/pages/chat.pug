@@ -11,6 +11,9 @@ body.pt-3
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
         include blocks/menu.pug
         .tab-content.pt-5.px-4
+          #current-chat.tab-pane.fade
+            #dialog
+              include blocks/dialog.pug
           #contacts.tab-pane.fade
             include blocks/contacts.pug
           #chats.tab-pane.fade.show.active
@@ -18,6 +21,6 @@ body.pt-3
           #profile.tab-pane.fade
             include blocks/profile.pug
       //- main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none
-      #dialog.col-md-8.p-0
+      #dialog.col-md-8.p-0.d-none.d-sm-none.d-md-block
         include blocks/dialog.pug
 script(src="js/bootstrap.bundle.min.js")

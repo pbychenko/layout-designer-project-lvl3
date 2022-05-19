@@ -10,37 +10,52 @@
 
 	.messages {
 		@include hide-scrollbar;
-		.test {
+		.message {
 			max-width: 648px;
 		}
-		// text-align: left;
-		// width: 600px;
-		// border: green 1px solid;
-		// height: calc(100vh - 10rem);
+
+		height: calc(100vh - 14rem);
 	}
 
-	.message {
-		// background-color: map-get($theme-colors,'primary');
+	.message-text {
 		border-radius: 1rem;
 	}
 
 	.time {
 		font-size: 12.8px;
 	}
+	form {
+		.button {
+			width: 50px;
+			height: 50px;
+			border-radius: 1rem;
+		}
+
+		img {
+			width: 21px;
+			height: 21px;
+			filter: brightness(0) invert(1);
+		}
+	}
 }
 
-// @media (max-width: $max-mob-width) {
-// 	// nav {
-// 	// 		// margin-left: -1.5rem;
-// 	// 		// margin-right: -1.5rem;
-// 	// 		// margin-top: 0;
-// 	// 	border-top-left-radius: 0;
-// 	// }
-// 	#chat {
-// 		height: 83vh;
-// 		.message {
-// 			width: 236px;
-// 		}
-// 	}
-// }
+
+
+@media (max-width: $max-mob-width) {
+	#dialog {
+		form {
+			.button {
+				width: 42px;
+				height: 42px;
+				border-radius: 1rem;
+			}
+	
+			img {
+				width: 21px;
+				height: 21px;
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+}
 

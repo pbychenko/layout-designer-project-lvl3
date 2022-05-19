@@ -39,42 +39,25 @@
 .mt-5.messages.mx-0.d-flex.flex-column
   each user in people  
     if user.name == ''
-      .d-flex.align-items-end.mb-3.p-0.test.mx-5.align-self-end
-        .d-flex.align-items-end.mb-3.p-0.test.mx-5
-        img(src=user.avatar).rounded-circle
-        .p-4.message.ms-3.bg-primary
-          p.text-white.mb-0.message= user.message
+      .d-flex.align-items-end.mb-3.p-0.message.mx-md-5.align-self-md-end
+        img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
+        .p-4.message-text.ms-3.bg-primary
+          p.text-white.mb-0= user.message
           hr.my-2.text-muted           
           p.text-white.small.time.mb-0= user.time
     else
-      .d-flex.align-items-end.mb-3.p-0.test.mx-5
-        img(src=user.avatar).rounded-circle
-        .p-4.message.ms-3
+      .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
+        img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
+        .p-4.message-text.ms-3
           p.mb-0
             strong= user.name
-          p.text-muted.mb-0.message= user.message
+          p.text-muted.mb-0= user.message
           hr.my-2.text-white        
           p.text-muted.small.time.mb-0= user.time
+  
 
-//- ul.list-group.mt-5.messages.mx-0.d-flex.justify-content-end.flex-column
-//-   each user in people
-//-     if user.name == ''          
-//-       li.list-group-item.mb-3.p-0.border-0
-//-         a(href="#").text-decoration-none.link-dark
-//-           .d-flex.align-items-end
-//-             img(src=user.avatar).rounded-circle
-//-             if user.name == ''
-//-               .p-4.message.ms-3.bg-primary
-//-                 //- p.mb-0
-//-                 //-   strong= user.name
-//-                 p.text-white.mb-0.message= user.message
-//-                 hr.my-2.text-muted           
-//-                 p.text-white.small.time.mb-0= user.time
-//-             else
-//-               .p-4.message.ms-3
-//-                 p.mb-0
-//-                   strong= user.name
-//-                 p.text-muted.mb-0.message= user.message
-//-                 hr.my-2.text-white        
-//-                 p.text-muted.small.time.mb-0= user.time
+form.send-message-form.mx-md-5.d-flex.mb-3.mb-md-0
+  input(type='text' placeholder='Напишите сообщение...').p-sm-0.p-md-2.form-control.border-0.shadow-none
+  .button(type="submit").btn.btn-primary.rounded-circle.d-flex.align-items-center.justify-content-center
+    img(src="/images/icons/cursor.svg")
 
