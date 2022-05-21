@@ -6,8 +6,8 @@ head
   title Hexlet chat
   link(rel='stylesheet' href='./styles/app.css')      
 body.container-xxl.p-0
- .bg-white.p-4
-    .row
+ .content.p-4
+    .row.bg-white
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column
         include blocks/menu.pug
         .tab-content.pt-5.px-4
@@ -17,7 +17,7 @@ body.container-xxl.p-0
             include blocks/chats.pug
           #profile.tab-pane.fade
             include blocks/profile.pug
-      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none
+      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none.bg-white
         .text-center
           img(src="../images/avatar_1.jpg").rounded-circle
           p.mb-0
