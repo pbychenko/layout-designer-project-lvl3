@@ -11,7 +11,7 @@
 	.messages {
 		@include hide-scrollbar;
 		.message {
-			max-width: 648px;
+			max-width: 624px;
 		}
 
 		height: calc(100vh - 14rem);
@@ -19,6 +19,7 @@
 
 	.message-text {
 		border-radius: 1rem;
+		// border: red 1px solid;
 	}
 
 	.time {
