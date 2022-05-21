@@ -11258,10 +11258,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: #EFEFEF;
-}
-
 h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   font-weight: 700;
 }
@@ -11271,16 +11267,17 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
 }
 
 nav {
-  background-color: #4545A5;
   height: 4.5rem;
   border-top-left-radius: 1rem;
 }
 nav img {
   filter: brightness(0) invert(1);
 }
-nav ul img {
+nav img {
   height: 25px;
-  width: 18px;
+}
+nav ul img {
+  width: 25px;
 }
 
 @media (max-width: 414px) {
@@ -11342,7 +11339,7 @@ nav ul img {
   }
 }
 #profile {
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 10.5rem);
 }
 #profile {
   -ms-overflow-style: none;

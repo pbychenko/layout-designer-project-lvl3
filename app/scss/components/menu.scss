@@ -1,28 +1,24 @@
 nav {
-	background-color: map-get($theme-colors,'primary');
 	height: 4.5rem;
-	// margin-left: -1.5rem;
-	// margin-top: -1rem;
 	border-top-left-radius: 1rem;
+	
 	img {
 		filter: brightness(0) invert(1);
 	}
 
-	ul img {
+	img {
 		height: 25px;
-		width: 18px;
 	}
-	// border: red 1px solid;
+
+	ul img {
+		width: 25px;
+	}
 }
 
 
 @media (max-width: $max-mob-width) {
 	nav {
-			// margin-left: -1.5rem;
-			// margin-right: -1.5rem;
-			// margin-top: 0;
 		border-top-left-radius: 0;
-		// justify-content: space-evenly;
 	}
 }
 
