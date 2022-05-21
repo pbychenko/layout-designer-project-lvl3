@@ -11266,7 +11266,7 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   font-weight: 700;
 }
 
-.main {
+.container-xxl {
   border: 1px solid #EFEFEF;
   border-radius: 1rem;
   height: calc(100vh - 2rem);

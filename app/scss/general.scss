@@ -6,8 +6,7 @@ h2,h3,h4,h6 {
 	font-weight: 700;
 }
 
-//убрать отсюда
-.main {
+.container-xxl {
 	border: 1px solid map-get($theme-colors, 'gray');
 	border-radius: 1rem;
 	height: calc(100vh - 2rem);
