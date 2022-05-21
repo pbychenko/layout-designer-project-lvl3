@@ -44,16 +44,16 @@
         .p-4.message-text.ms-3.bg-primary
           p.text-white.mb-0= user.message
           hr.text-gray         
-          p.text-white.small.time.mb-0= user.time
+          p.text-white.time.mb-0= user.time
     else
       .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
         img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-        .p-4.message-text.ms-4
+        .p-4.message-text.ms-3
           p.mb-0
             strong= user.name
           p.text-muted.mb-0= user.message
           hr.text-gray        
-          p.text-muted.small.time.mb-0= user.time
+          p.text-muted.time.mb-0= user.time
   
 
 form.send-message-form.mx-md-5.d-flex.mb-3.mb-md-0
