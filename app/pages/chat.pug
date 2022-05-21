@@ -5,9 +5,9 @@ head
   meta(rel='icon' type='image/x-icon' href='favicon.ico')
   title Hexlet chat
   link(rel='stylesheet' href='./styles/app.css')      
-body.pt-3
-  .container-xxl.bg-white.main
-    .row
+body.container-xxl.p-0.bg-gray
+  .content.p-md-4
+    .row.bg-white.m-0
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
         include blocks/chat-menu.pug
         .tab-content.pt-5.px-4
@@ -20,7 +20,6 @@ body.pt-3
             include blocks/chats.pug
           #profile.tab-pane.fade
             include blocks/profile.pug
-      //- main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none
       #dialog.col-md-8.p-0.d-none.d-sm-none.d-md-block
         include blocks/dialog.pug
 script(src="js/bootstrap.bundle.min.js")
