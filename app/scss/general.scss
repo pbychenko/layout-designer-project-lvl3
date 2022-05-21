@@ -7,17 +7,17 @@ h2,h3,h4,h6 {
 }
 
 .container-xxl {
-	border: 1px solid map-get($theme-colors, 'gray');
-	border-radius: 1rem;
+	// border: 1px solid map-get($theme-colors, 'gray');
+	// border-radius: 1rem;
 	height: calc(100vh - 2rem);
-	border-top-left-radius: 1rem;
+	// border-top-left-radius: 1rem;
 	// border: solid 1px red;
 }
 
-.main {
-	border: 1px solid map-get($theme-colors, 'gray');
-	border-radius: 1rem;
-	height: calc(100vh - 2rem);
-	border-top-left-radius: 1rem;
-	// border: solid 1px red;
-}
+// .main {
+// 	border: 1px solid map-get($theme-colors, 'gray');
+// 	border-radius: 1rem;
+// 	height: calc(100vh - 2rem);
+// 	border-top-left-radius: 1rem;
+// 	// border: solid 1px red;
+// }
