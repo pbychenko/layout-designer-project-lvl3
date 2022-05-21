@@ -11388,6 +11388,10 @@ nav ul img {
 #dialog .message-text {
   border-radius: 1rem;
 }
+#dialog .message-text hr {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
 #dialog .time {
   font-size: 12.8px;
 }
