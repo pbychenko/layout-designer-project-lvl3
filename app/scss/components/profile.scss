@@ -6,11 +6,22 @@
 		width: 90px;
 	}
 
-	// height: calc(100vh - 10.5rem);
-	height: calc(100vh - 7.5rem);
+	height: calc(100vh - 10.5rem);
+	// height: calc(100vh - 7.5rem);
 
 	.list-group {
 		font-size: 12.8px;
 	}
 }
 
+@media (max-width: $max-mob-width) {
+	// nav {
+	// 		// margin-left: -1.5rem;
+	// 		// margin-right: -1.5rem;
+	// 		// margin-top: 0;
+	// 	border-top-left-radius: 0;
+	// }
+	#profile {
+		height: calc(100vh - 7.5rem);
+	}
+}

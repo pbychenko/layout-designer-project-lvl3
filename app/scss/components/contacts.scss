@@ -7,7 +7,7 @@
 	}
 	// height: 65vh;
 
-	height: calc(100vh - 7.5rem);
+	height: calc(100vh - 10.5rem);
 }
 
 @media (max-width: $max-mob-width) {
@@ -17,8 +17,8 @@
 	// 		// margin-top: 0;
 	// 	border-top-left-radius: 0;
 	// }
-	// #contacts {
-	// 	height: 83vh;
-	// }
+	#contacts {
+		height: calc(100vh - 7.5rem);
+	}
 }
 

@@ -11286,7 +11286,7 @@ nav ul img {
   }
 }
 #contacts {
-  height: calc(100vh - 7.5rem);
+  height: calc(100vh - 10.5rem);
 }
 #contacts {
   -ms-overflow-style: none;
@@ -11302,8 +11302,13 @@ nav ul img {
   width: 50px;
 }
 
+@media (max-width: 414px) {
+  #contacts {
+    height: calc(100vh - 7.5rem);
+  }
+}
 #chats {
-  height: calc(100vh - 7.5rem);
+  height: calc(100vh - 10.5rem);
 }
 #chats {
   -ms-overflow-style: none;
@@ -11326,12 +11331,15 @@ nav ul img {
 }
 
 @media (max-width: 414px) {
+  #chats {
+    height: calc(100vh - 7.5rem);
+  }
   #chats .message {
     width: 236px;
   }
 }
 #profile {
-  height: calc(100vh - 7.5rem);
+  height: calc(100vh - 10.5rem);
 }
 #profile {
   -ms-overflow-style: none;
@@ -11350,6 +11358,11 @@ nav ul img {
   font-size: 12.8px;
 }
 
+@media (max-width: 414px) {
+  #profile {
+    height: calc(100vh - 7.5rem);
+  }
+}
 #dialog img {
   height: 50px;
   width: 50px;
