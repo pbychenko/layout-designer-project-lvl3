@@ -11410,9 +11410,12 @@ nav ul img {
 @media (max-width: 414px) {
   #current-chat .dialog-header {
     margin-top: -48px;
-    margin-left: -24px;
-    margin-right: -24px;
-    padding-left: 24px;
+    margin-left: -48px;
+    margin-right: -48px;
+    padding-left: 48px;
+  }
+  #current-chat .message {
+    width: 100%;
   }
   #current-chat form .button {
     width: 42px;
