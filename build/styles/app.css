@@ -11371,6 +11371,9 @@ nav ul img {
   height: 91px;
 }
 #dialog .dialog-body {
+  height: calc(100vh - 19rem);
+}
+#dialog .dialog-body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: auto;
