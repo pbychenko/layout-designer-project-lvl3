@@ -4,19 +4,21 @@
 		width: 50px;
 	}
 
-	.head {
-		height: 5.5rem;
+	.dialog-header {
+		height: 91px;
 		// border: solid 1px red;
 	}
 
-	.messages {
+	.dialog-body {
 		@include hide-scrollbar;
-		.message {
-			max-width: 624px;
-		}
+		
 		// border: solid 1px red;
 
-		height: calc(100vh - 14rem);
+		// height: calc(100vh - 14rem);
+	}
+
+	.message {
+		max-width: 624px;
 	}
 
 	.message-text {
@@ -26,11 +28,11 @@
 			margin-top: 8px;
 			margin-bottom: 4px;
 		}
+		.time {
+			font-size: 12.8px;
+		}
 	}
-
-	.time {
-		font-size: 12.8px;
-	}
+	
 	form {
 		.button {
 			width: 50px;

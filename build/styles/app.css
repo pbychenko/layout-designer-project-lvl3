@@ -11367,22 +11367,19 @@ nav ul img {
   height: 50px;
   width: 50px;
 }
-#dialog .head {
-  height: 5.5rem;
+#dialog .dialog-header {
+  height: 91px;
 }
-#dialog .messages {
-  height: calc(100vh - 14rem);
-}
-#dialog .messages {
+#dialog .dialog-body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: auto;
   overflow-x: hidden;
 }
-#dialog .messages::-webkit-scrollbar {
+#dialog .dialog-body::-webkit-scrollbar {
   display: none;
 }
-#dialog .messages .message {
+#dialog .message {
   max-width: 624px;
 }
 #dialog .message-text {
@@ -11392,7 +11389,7 @@ nav ul img {
   margin-top: 8px;
   margin-bottom: 4px;
 }
-#dialog .time {
+#dialog .message-text .time {
   font-size: 12.8px;
 }
 #dialog form .button {
