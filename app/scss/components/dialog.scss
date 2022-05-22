@@ -23,6 +23,7 @@
 
 	.message-text {
 		border-radius: 1rem;
+		line-height: 1.5rem;
 		// border: red 1px solid;
 		hr {
 			margin-top: 8px;
@@ -47,8 +48,6 @@
 		}
 	}
 }
-
-
 
 @media (max-width: $max-mob-width) {
 	#dialog {
