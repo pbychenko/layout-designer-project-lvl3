@@ -30,7 +30,7 @@
       time: "Только что"
     }]
 
-.head.d-flex.align-items-center
+.head.d-flex.align-items-center.border.border-gray
   img(src="/images/avatar_4.jpg").rounded-circle
   .ps-4
     p.mb-0
@@ -48,7 +48,7 @@
     else
       .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
         img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-        .p-4.message-text.ms-3
+        .p-4.message-text.ms-3.bg-light
           p.mb-0
             strong= user.name
           p.text-muted.mb-0= user.message

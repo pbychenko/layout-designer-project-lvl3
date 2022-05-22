@@ -11369,10 +11369,8 @@ nav ul img {
 }
 #dialog .head {
   height: 5.5rem;
-  border: solid 1px red;
 }
 #dialog .messages {
-  border: solid 1px red;
   height: calc(100vh - 14rem);
 }
 #dialog .messages {
