@@ -1,4 +1,4 @@
-#dialog {
+#current-chat {
 	img {
 		height: 50px;
 		width: 50px;
@@ -51,7 +51,15 @@
 }
 
 @media (max-width: $max-mob-width) {
-	#dialog {
+	#current-chat {
+		.dialog-header {
+			margin-top: - 48px;
+			margin-left: -24px;
+			margin-right: -24px;
+			padding-left: 24px;
+			// border: solid 1px red;
+		}
+
 		form {
 			.button {
 				width: 42px;

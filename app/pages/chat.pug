@@ -10,16 +10,15 @@ body.container-xxl.p-0.bg-gray
     .row.bg-white.m-0
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
         include blocks/chat-menu.pug
-        .tab-content
+        .tab-content.pt-5.px-4
           #current-chat.tab-pane.fade
-            #dialog
-              include blocks/dialog.pug
-          #contacts.tab-pane.fade.pt-5.px-4
+            include blocks/dialog.pug      
+          #contacts.tab-pane.fade
             include blocks/contacts.pug
-          #chats.tab-pane.fade.show.active.pt-5.px-4
+          #chats.tab-pane.fade.show.active
             include blocks/chats.pug
-          #profile.tab-pane.fade.pt-5.px-4
+          #profile.tab-pane.fade
             include blocks/profile.pug
-      #dialog.col-md-8.p-0.d-none.d-sm-none.border.border-gray.d-md-flex.flex-md-column
+      #current-chat.col-md-8.p-0.d-none.d-sm-none.border.border-gray.d-md-flex.flex-md-column
         include blocks/dialog.pug
 script(src="js/bootstrap.bundle.min.js")

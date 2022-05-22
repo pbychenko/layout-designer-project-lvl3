@@ -11363,57 +11363,63 @@ nav ul img {
     height: calc(100vh - 7.5rem);
   }
 }
-#dialog img {
+#current-chat img {
   height: 50px;
   width: 50px;
 }
-#dialog .dialog-header {
+#current-chat .dialog-header {
   height: 91px;
 }
-#dialog .dialog-body {
+#current-chat .dialog-body {
   height: calc(100vh - 19rem);
 }
-#dialog .dialog-body {
+#current-chat .dialog-body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: auto;
   overflow-x: hidden;
 }
-#dialog .dialog-body::-webkit-scrollbar {
+#current-chat .dialog-body::-webkit-scrollbar {
   display: none;
 }
-#dialog .message {
+#current-chat .message {
   max-width: 624px;
 }
-#dialog .message-text {
+#current-chat .message-text {
   border-radius: 1rem;
   line-height: 1.5rem;
 }
-#dialog .message-text hr {
+#current-chat .message-text hr {
   margin-top: 8px;
   margin-bottom: 4px;
 }
-#dialog .message-text .time {
+#current-chat .message-text .time {
   font-size: 12.8px;
 }
-#dialog form .button {
+#current-chat form .button {
   width: 50px;
   height: 50px;
   border-radius: 1rem;
 }
-#dialog form img {
+#current-chat form img {
   width: 21px;
   height: 21px;
   filter: brightness(0) invert(1);
 }
 
 @media (max-width: 414px) {
-  #dialog form .button {
+  #current-chat .dialog-header {
+    margin-top: -48px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+  }
+  #current-chat form .button {
     width: 42px;
     height: 42px;
     border-radius: 1rem;
   }
-  #dialog form img {
+  #current-chat form img {
     width: 21px;
     height: 21px;
     filter: brightness(0) invert(1);
