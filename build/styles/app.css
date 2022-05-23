@@ -11414,6 +11414,9 @@ nav ul img {
     margin-right: -48px;
     padding-left: 48px;
   }
+  #current-chat .dialog-body {
+    height: calc(100vh - 14rem);
+  }
   #current-chat .message {
     width: 100%;
   }

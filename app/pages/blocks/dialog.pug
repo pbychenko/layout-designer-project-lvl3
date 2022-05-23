@@ -36,7 +36,7 @@
     p.mb-0
       strong Вениамин Редакторович
     p.small.mb-0 Онлайн
-.mt-5.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0
+.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0
   each user in people  
     if user.name == ''
       .d-flex.align-items-end.mb-3.p-0.message.mx-md-5.align-self-md-end
@@ -55,7 +55,7 @@
           hr.text-gray        
           p.text-muted.time.mb-0= user.time  
 
-form.send-message-form.mx-md-5.d-flex.mb-3.mb-md-0.mt-5
+form.send-message-form.mx-md-5.d-flex.mb-3.mb-md-0
   input(type='text' placeholder='Напишите сообщение...').p-sm-0.p-md-2.form-control.border-0.shadow-none
   .button(type="submit").btn.btn-primary.rounded-circle.d-flex.align-items-center.justify-content-center
     img(src="/images/icons/cursor.svg")
