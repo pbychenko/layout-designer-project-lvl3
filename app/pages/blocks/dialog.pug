@@ -36,19 +36,19 @@
     p.mb-0
       strong Вениамин Редакторович
     p.small.mb-0 Онлайн
-.mt-5.dialog-body.mx-0.d-flex.flex-column
+.mt-5.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0
   each user in people  
     if user.name == ''
       .d-flex.align-items-end.mb-3.p-0.message.mx-md-5.align-self-md-end
         img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-        .p-4.message-text.ms-3.bg-primary.shadow-sm
+        .p-4.message-text.ms-md-3.bg-primary.shadow-sm
           p.text-white.mb-0= user.message
           hr.text-gray         
           p.text-white.time.mb-0= user.time
     else
       .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
         img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-        .p-4.message-text.ms-3.bg-light.shadow-sm
+        .p-4.message-text.ms-md-3.bg-light.shadow-sm
           p.mb-0
             strong= user.name
           p.text-muted.mb-0= user.message
