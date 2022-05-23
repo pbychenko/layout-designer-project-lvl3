@@ -41,7 +41,7 @@ form.search-form.mb-5
   input#search(type='text' placeholder='Поиск по контактам...').p-4.form-control.border-0.shadow-none.border-bottom
 
 each people, letter in contacts
-  h2.h6.text-muted.mb-3= letter
+  p.text-muted.mb-3= letter
   ul.list-group.list-group-flush.mb-5
     each user in people        
       li.list-group-item.mb-3.py-0.shadow-sm
