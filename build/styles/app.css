@@ -11286,7 +11286,7 @@ nav ul img {
   }
 }
 #contacts {
-  height: calc(100vh - 10.5rem);
+  height: calc(100vh - 8rem);
 }
 #contacts {
   -ms-overflow-style: none;
@@ -11308,7 +11308,7 @@ nav ul img {
   }
 }
 #chats {
-  height: calc(100vh - 10.5rem);
+  height: calc(100vh - 8rem);
 }
 #chats {
   -ms-overflow-style: none;
@@ -11339,7 +11339,7 @@ nav ul img {
   }
 }
 #profile {
-  height: calc(100vh - 10.5rem);
+  height: calc(100vh - 8rem);
 }
 #profile {
   -ms-overflow-style: none;
