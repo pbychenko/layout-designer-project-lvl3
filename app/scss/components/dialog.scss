@@ -9,12 +9,16 @@
 		// border: solid 1px red;
 	}
 
+	// border: solid 1px red;
+
+	// height: calc(100vh - 3rem - 91px);
+
 	.dialog-body {
 		@include hide-scrollbar;
 		
 		// border: solid 1px red;
 
-		height: calc(100vh - 19rem);
+		height: calc(100vh - 6rem - 163px);
 	}
 
 	.message {
@@ -54,10 +58,10 @@
 @media (max-width: $max-mob-width) {
 	#current-chat {
 		.dialog-header {
-			margin-top: - 48px;
-			margin-left: -48px;
-			margin-right: -48px;
-			padding-left: 48px;
+			// margin-top: - 48px;
+			margin-left: -16px;
+			margin-right: -16px;
+			// padding-left: 48px;
 			// border: solid 1px red;
 		}
 
@@ -67,7 +71,8 @@
 			// padding-right: 24px;
 			// padding-left: 48px;
 			// border: solid 1px red;
-			height: calc(100vh - 14rem);
+			// height: calc(100vh - 7rem - 163px);
+			height: calc(100vh - 91px - 14rem );
 		}
 
 		.message {
@@ -87,6 +92,7 @@
 				height: 21px;
 				filter: brightness(0) invert(1);
 			}
+			// margin-bottom: 48px;
 		}
 	}
 }

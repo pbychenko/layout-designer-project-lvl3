@@ -11371,7 +11371,7 @@ nav ul img {
   height: 91px;
 }
 #current-chat .dialog-body {
-  height: calc(100vh - 19rem);
+  height: calc(100vh - 6rem - 163px);
 }
 #current-chat .dialog-body {
   -ms-overflow-style: none;
@@ -11409,13 +11409,11 @@ nav ul img {
 
 @media (max-width: 414px) {
   #current-chat .dialog-header {
-    margin-top: -48px;
-    margin-left: -48px;
-    margin-right: -48px;
-    padding-left: 48px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
   #current-chat .dialog-body {
-    height: calc(100vh - 14rem);
+    height: calc(100vh - 91px - 14rem);
   }
   #current-chat .message {
     width: 100%;
