@@ -11395,6 +11395,7 @@ nav ul img {
 }
 #current-chat .message-text .time {
   font-size: 12.8px;
+  line-height: 1.5;
 }
 #current-chat form .button {
   width: 50px;
