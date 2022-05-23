@@ -11304,7 +11304,7 @@ nav ul img {
 
 @media (max-width: 414px) {
   #contacts {
-    height: calc(100vh - 7.5rem);
+    height: calc(100vh - 4.5rem);
   }
 }
 #chats {
@@ -11332,7 +11332,7 @@ nav ul img {
 
 @media (max-width: 414px) {
   #chats {
-    height: calc(100vh - 7.5rem);
+    height: calc(100vh - 4.5rem);
   }
   #chats .message {
     width: 236px;
@@ -11360,7 +11360,7 @@ nav ul img {
 
 @media (max-width: 414px) {
   #profile {
-    height: calc(100vh - 7.5rem);
+    height: calc(100vh - 4.5rem);
   }
 }
 #current-chat img {
@@ -11413,7 +11413,7 @@ nav ul img {
     margin-right: -16px;
   }
   #current-chat .dialog-body {
-    height: calc(100vh - 91px - 14rem);
+    height: calc(100vh - 93px - 11rem);
   }
   #current-chat .message {
     width: 100%;
