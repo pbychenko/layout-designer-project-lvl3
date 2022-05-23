@@ -41,7 +41,7 @@ form.search-form.mb-5
   input#search(type='text' placeholder='Поиск по контактам...').p-4.form-control.border-0.shadow-none.border-bottom
 
 each people, letter in contacts
-  p.text-muted.mb-3= letter
+  p.text-muted.letter= letter
   ul.list-group.list-group-flush.mb-5
     each user in people        
       li.list-group-item.py-0.shadow-sm
@@ -51,4 +51,4 @@ each people, letter in contacts
             .p-4
               p.mb-0
                 strong= user.name
-              p.small= user.status
+              p.small.mb-0= user.status
