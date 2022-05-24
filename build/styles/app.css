@@ -11368,7 +11368,7 @@ nav ul img {
   width: 50px;
 }
 #current-chat .dialog-header {
-  height: 91px;
+  height: 93px;
 }
 #current-chat .dialog-body {
   height: calc(100vh - 7rem - 163px);
@@ -11414,7 +11414,7 @@ nav ul img {
   }
   #current-chat .dialog-body {
     margin-top: 49px;
-    height: calc(100vh - 91px - 12rem);
+    height: calc(100vh - 95px - 12rem);
   }
   #current-chat .message {
     width: 100%;
