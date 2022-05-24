@@ -11425,8 +11425,8 @@ nav ul img {
     border-radius: 1rem;
   }
   #current-chat form img {
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1);
   }
 }
