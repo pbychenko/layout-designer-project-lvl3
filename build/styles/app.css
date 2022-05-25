@@ -11403,7 +11403,7 @@ nav ul img {
 #current-chat form img {
   width: 21px;
   height: 21px;
-  filter: brightness(0) invert(1);
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
 }
 
 @media (max-width: 414px) {
