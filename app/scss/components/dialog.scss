@@ -1,17 +1,19 @@
 #current-chat {
+	// line-height: 1.5;
 	img {
 		height: 50px;
 		width: 50px;
 	}
 
 	.dialog-header {
-		height: 91px;
+		height: 93px;
 		// border: solid 1px red;
 	}
 
 
 	.dialog-body {
 		@include hide-scrollbar;
+		// line-height: 1.5;
 		
 		// border: solid 1px red;
 
@@ -32,7 +34,7 @@
 			margin-bottom: 4px;
 		}
 		.time {
-			font-size: 12.8px;
+			// font-size: 12.8px;
 			// line-height: 1.5;
 		}
 	}
