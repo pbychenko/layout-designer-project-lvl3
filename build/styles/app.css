@@ -11262,8 +11262,9 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   font-weight: 700;
 }
 
-.container-xxl {
-  height: 100vh;
+.user-image {
+  height: 50px;
+  width: 50px;
 }
 
 nav {
@@ -11299,10 +11300,6 @@ nav ul img {
 }
 #contacts::-webkit-scrollbar {
   display: none;
-}
-#contacts img {
-  height: 50px;
-  width: 50px;
 }
 
 @media (max-width: 414px) {

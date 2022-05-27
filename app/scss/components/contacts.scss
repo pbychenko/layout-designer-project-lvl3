@@ -1,26 +1,10 @@
 #contacts {
 	@include hide-scrollbar;
 
-	img {
-		height: 50px;
-		width: 50px;
-	}
-	// height: 65vh;
-
 	height: calc(100vh - 8rem);
-	// border: solid 1px red;
-	// .letter {
-	// 	margin-bottom: 19px;
-	// }
 }
 
 @media (max-width: $max-mob-width) {
-	// nav {
-	// 		// margin-left: -1.5rem;
-	// 		// margin-right: -1.5rem;
-	// 		// margin-top: 0;
-	// 	border-top-left-radius: 0;
-	// }
 	#contacts {
 		height: calc(100vh - 4.5rem);
 	}

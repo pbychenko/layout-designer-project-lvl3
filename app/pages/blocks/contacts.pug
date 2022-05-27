@@ -36,9 +36,12 @@
     }],
   }
 
+
+include components/contact
+include components/form
+
 h2.mb-4.pt-5 Контакты
-form.search-form.mb-5
-  input#search(type='text' placeholder='Поиск по контактам...').p-4.form-control.border-0.shadow-none.border-bottom
++form('Поиск по контактам...')
 
 each people, letter in contacts
   p.text-muted.letter= letter
@@ -47,8 +50,4 @@ each people, letter in contacts
       li.list-group-item.py-0.shadow-sm
         a(href="#").text-decoration-none.link-dark
           .d-flex.align-items-center
-            img(src=user.avatar).rounded-circle
-            .p-4
-              p.mb-0
-                strong= user.name
-              p.small.mb-0= user.status
+            +contact(user.name, user.status, user.avatar)

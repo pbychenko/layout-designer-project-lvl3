@@ -9,9 +9,14 @@ h2,h3,h4,h6 {
 .container-xxl {
 	// border: 1px solid map-get($theme-colors, 'gray');
 	// border-radius: 1rem;
-	height: 100vh;
+	// height: 100vh;
 	// border-top-left-radius: 1rem;
 	// border: solid 1px red;
+}
+
+.user-image {
+	height: 50px;
+	width: 50px;
 }
 
 // .row {
