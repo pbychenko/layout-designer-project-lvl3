@@ -36,6 +36,6 @@ h2.mb-4.pt-5 Профиль
   .card-body.text-center
     h6 Кодовёнок Хекслетович
     p.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-.list-group.list-group-flush.py-3
-each contact in contactsData
-  +profileContacts(contact) 
+ul.list-group.list-group-flush.py-3
+  each contact in contactsData
+    +profileContacts(contact) 
