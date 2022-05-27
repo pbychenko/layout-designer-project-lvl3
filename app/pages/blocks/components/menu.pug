@@ -1,7 +1,4 @@
 mixin menu(isChat=false, activeContacts = 'active', activeChats = '')
-  //- if isChat
-  //-   - activeContacts = ''
-  //-   - activeChats = 'active'
   nav.d-flex.align-items-center.px-4.bg-primary
     .logo.pe-md-5
       img(src='../images/icons/logo.svg')
@@ -12,19 +9,9 @@ mixin menu(isChat=false, activeContacts = 'active', activeChats = '')
             img(src='../images/icons/chat-left-text.svg').me-2
             span.text-light.d-none.d-md-inline.small Диалог
       li.list-inline-item.nav-item(role="presentation").me-md-4.me-3.mx-3.mx-md-0
-        //- if isChat
         a(href="#contacts", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected=!isChat, aria-controls="contacts", class=activeContacts)#contacts-tab.text-decoration-none
-          //- else
-          //-   a(href="#contacts", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected="true", aria-controls="contacts")#contacts-tab.text-decoration-none.active
           img(src='../images/icons/people.svg').me-2 
           span.text-light.d-none.d-md-inline.small Контакты 
-      //- li.list-inline-item.nav-item(role="presentation").me-md-4.me-3.mx-3.mx-md-0
-      //-   if isChat
-      //-     a(href="#chats", data-bs-target="#chats", data-bs-toggle="tab", aria-selected="true", aria-controls="chats")#chats-tab.text-decoration-none.active
-      //-   else
-      //-     a(href="#chats", data-bs-target="#chats", data-bs-toggle="tab", aria-selected="false", aria-controls="chats")#chats-tab.text-decoration-none          
-      //-   img(src='../images/icons/chat.svg').me-2 
-      //-   span.text-light.d-none.d-md-inline.small Сообщения
       li.list-inline-item.nav-item(role="presentation").me-md-4.me-3.mx-3.mx-md-0
         a(href="#chats", data-bs-target="#chats", data-bs-toggle="tab", aria-selected=isChat, aria-controls="chats", class=activeChats)#chats-tab.text-decoration-none
           img(src='../images/icons/chat.svg').me-2 
