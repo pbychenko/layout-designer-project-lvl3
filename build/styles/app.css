@@ -11352,9 +11352,6 @@ nav ul img {
 #profile::-webkit-scrollbar {
   display: none;
 }
-#profile .list-group {
-  font-size: 12.8px;
-}
 
 @media (max-width: 414px) {
   #profile {

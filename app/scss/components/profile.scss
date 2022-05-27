@@ -2,10 +2,6 @@
 	@include hide-scrollbar;
 
 	height: calc(100vh - 8rem);
-
-	.list-group {
-		font-size: 12.8px;
-	}
 }
 
 @media (max-width: $max-mob-width) {
