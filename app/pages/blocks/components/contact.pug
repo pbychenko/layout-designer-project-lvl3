@@ -1,6 +1,6 @@
-mixin contact(name, status, avatar)
-  img(src=avatar).user-image.rounded-circle
+mixin contact(userData)
+  img(src=userData.avatar).user-image.rounded-circle
   .p-4
     p.mb-0
-      strong= name
-    p.small.mb-0= status
+      strong= userData.name
+    p.small.mb-0= userData.status

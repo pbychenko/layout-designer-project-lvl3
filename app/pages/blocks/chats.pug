@@ -18,19 +18,15 @@
       time: "08:53"
     }]
 
+include components/chat
+include components/form
+
 h2.mb-4.pt-5 Чаты
-form.search-form.mb-5
-  input#search(type='text' placeholder='Поиск по сообщениям...').p-4.form-control.border-0.shadow-none.border-bottom
++form('Поиск по сообщениям...')
 
 ul.list-group.list-group-flush.mb-5
   each user in people        
     li.list-group-item.mb-3.py-0.shadow-sm
       a(href="#").text-decoration-none.link-dark
         .d-flex.align-items-center
-          img(src=user.avatar).rounded-circle
-          .d-flex.align-items-center
-            div.p-4
-              p.mb-0
-                strong= user.name
-              p.small.text-muted.mb-0.message= user.message               
-            p.text-muted.small.time= user.time
+          +chat(user)

@@ -11319,10 +11319,6 @@ nav ul img {
 #chats::-webkit-scrollbar {
   display: none;
 }
-#chats img {
-  height: 50px;
-  width: 50px;
-}
 #chats .message {
   white-space: nowrap;
   overflow: hidden;

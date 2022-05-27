@@ -1,0 +1,8 @@
+mixin chat(userData)
+  img(src=userData.avatar).user-image.rounded-circle
+  .d-flex.align-items-center
+    div.p-4
+      p.mb-0
+        strong= userData.name
+      p.small.text-muted.mb-0.message= userData.message               
+    p.text-muted.small.time= userData.time
