@@ -19,26 +19,10 @@ nav {
 @media (max-width: $max-mob-width) {
 	nav {
 		border-top-left-radius: 0;
-		li {
-			// padding-right: 40px;
-			// border: solid 1px red;
-		}
-
-		li:last-child {
-			// border: solid 1px green;
-			// margin-right: 0;
-			// padding-right: 0;
-			// img {
-			// 	margin-right: 0;
-			// }
-
-		}
 	}
 
 	.logo {
 		margin-right: 118px;
-	}
-
-	
+	}	
 }
 

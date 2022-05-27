@@ -1,3 +1,5 @@
+include blocks/components/menu
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -9,7 +11,8 @@ body.container-xxl.p-0.bg-gray
   .content.p-md-4
     .row.bg-white.m-0
       aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
-        include blocks/chat-menu.pug
+        +menu(true)
+        //- include blocks/chat-menu.pug
         .tab-content.px-4
           #current-chat.tab-pane.fade
             include blocks/dialog.pug      
