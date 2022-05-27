@@ -1,30 +1,41 @@
-h2.mb-4.pt-5 Профиль
-form.search-form.mb-5
-  input#search(type='text' placeholder='Поиск по сообщениям...').p-4.form-control.border-0.shadow-none.border-bottom
+-
+  var contactsData = [{
+      title: "Страна",
+      data: "Москва, Россия",
+      image: "../images/icons/globe.svg",
+    },
+    {
+      title: "Телефон",
+      data: "+7(499) 123-45-67",
+      image: "../images/icons/telephone.svg",
+    },
+    {
+      title: "Email",
+      data: "nikita.m@hexlet.io",
+      image: "../images/icons/envelope.svg",
+    },
+    {
+      title: "Twitter",
+      data: "@n__mikhaylov",
+      image: "../images/icons/people.svg",
+    }]
 
+mixin profileContacts(contactData)
+  li.list-group-item.d-flex.justify-content-between
+    div.mb-2
+      p.text-muted.mb-0= contactData.title
+      p.mb-0= contactData.data
+    img(src=contactData.image)
+
+include components/form
+
+h2.mb-4.pt-5 Профиль
++form('Поиск по сообщениям...')
 .card.d-flex.align-items-center.mb-3.border-0.py-3
-  img(src="../images/avatar_1.jpg").rounded-circle
+  img(src="../images/avatar_1.jpg").profile-image.rounded-circle
   .card-body.text-center
     h6 Кодовёнок Хекслетович
     p.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
 .list-group.list-group-flush.py-3
-  li.list-group-item.d-flex.justify-content-between
-    div.mb-2
-      p.text-muted.mb-0 Страна
-      p.mb-0 Москва, Россия
-    img(src="../images/icons/globe.svg")
-  li.list-group-item.d-flex.justify-content-between
-    div.mb-2
-      p.text-muted.mb-0 Телефон
-      p.mb-0 +7(499) 123-45-67
-    img(src="../images/icons/telephone.svg")
-  li.list-group-item.d-flex.justify-content-between
-    div.mb-2
-      p.text-muted.mb-0 Email
-      p.mb-0 nikita.m@hexlet.io
-    img(src="../images/icons/envelope.svg")
-  li.list-group-item.d-flex.justify-content-between
-    div.mb-2
-      p.text-muted.mb-0 Twitter
-      p.mb-0 @n__mikhaylov
-    img(src="../images/icons/people.svg")
+each contact in contactsData
+  +profileContacts(contact) 

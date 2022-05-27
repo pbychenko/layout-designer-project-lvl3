@@ -11267,6 +11267,11 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   width: 50px;
 }
 
+.profile-image {
+  height: 90px;
+  width: 90px;
+}
+
 nav {
   height: 4.5rem;
   border-top-left-radius: 1rem;
@@ -11345,10 +11350,6 @@ nav ul img {
 }
 #profile::-webkit-scrollbar {
   display: none;
-}
-#profile .card img {
-  height: 90px;
-  width: 90px;
 }
 #profile .list-group {
   font-size: 12.8px;
