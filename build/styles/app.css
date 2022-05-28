@@ -11358,13 +11358,6 @@ nav ul img {
     height: calc(100vh - 4.5rem);
   }
 }
-#current-chat img {
-  height: 50px;
-  width: 50px;
-}
-#current-chat .dialog-header {
-  height: 93px;
-}
 #current-chat .dialog-body {
   height: calc(100vh - 7rem - 163px);
 }
@@ -11383,21 +11376,14 @@ nav ul img {
 #current-chat .message-text {
   border-radius: 1rem;
 }
-#current-chat .message-text hr {
-  margin-top: 8px;
-  margin-bottom: 4px;
-}
 #current-chat .time {
   opacity: 60%;
 }
 #current-chat form .button {
   width: 50px;
   height: 50px;
-  border-radius: 1rem;
 }
 #current-chat form img {
-  width: 21px;
-  height: 21px;
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
 }
 
@@ -11407,7 +11393,6 @@ nav ul img {
     margin-right: -24px;
   }
   #current-chat .dialog-body {
-    margin-top: 49px;
     height: calc(100vh - 95px - 12rem);
   }
   #current-chat .message {
@@ -11416,11 +11401,5 @@ nav ul img {
   #current-chat form .button {
     width: 42px;
     height: 42px;
-    border-radius: 1rem;
-  }
-  #current-chat form img {
-    width: 22px;
-    height: 22px;
-    filter: brightness(0) invert(1);
   }
 }

@@ -1,13 +1,7 @@
 #current-chat {
-	img {
-		height: 50px;
-		width: 50px;
-	}
-
-	.dialog-header {
-		height: 93px;
-	}
-
+	// .dialog-header {
+	// 	height: 93px;
+	// }
 
 	.dialog-body {
 		@include hide-scrollbar;
@@ -21,10 +15,6 @@
 
 	.message-text {
 		border-radius: 1rem;
-		hr {
-			margin-top: 8px;
-			margin-bottom: 4px;
-		}
 	}
 
 	.time {
@@ -35,12 +25,11 @@
 		.button {
 			width: 50px;
 			height: 50px;
-			border-radius: 1rem;
 		}
 
 		img {
-			width: 21px;
-			height: 21px;
+			// width: 21px;
+			// height: 21px;
 			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
 		}
 	}
@@ -54,7 +43,7 @@
 		}
 
 		.dialog-body {
-			margin-top: 49px;
+			// margin-top: 49px;
 			height: calc(100vh - 95px - 12rem );
 		}
 
@@ -66,13 +55,6 @@
 			.button {
 				width: 42px;
 				height: 42px;
-				border-radius: 1rem;
-			}
-	
-			img {
-				width: 22px;
-				height: 22px;
-				filter: brightness(0) invert(1);
 			}
 		}
 	}

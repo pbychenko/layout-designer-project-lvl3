@@ -1,10 +1,10 @@
 mixin message(userData, bgColor='bg-light', fontColor='text-muted', align ='')
   .d-flex.align-items-end.mb-3.p-0.message.mx-md-5(class=align)
-    img(src=userData.avatar).rounded-circle.d-none.d-sm-none.d-md-block
+    img(src=userData.avatar).rounded-circle.d-none.d-sm-none.d-md-block.user-image
     .p-4.message-text.ms-md-3.shadow-sm(class=bgColor)
       if userData.name != ''
         p.mb-1
           strong= userData.name
       p.mb-0(class=fontColor)= userData.message
-      hr.bg-gray      
+      hr.bg-gray.mb-1.mt-2      
       p.time.mb-0(class=fontColor).small= userData.time

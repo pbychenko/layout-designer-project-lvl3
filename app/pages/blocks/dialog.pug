@@ -33,8 +33,8 @@
 include components/message
 
 .dialog-header.d-flex.align-items-center.border-bottom.border-gray
-  img(src="/images/avatar_4.jpg").rounded-circle.ms-3
-  .ps-4
+  img(src="/images/avatar_4.jpg").rounded-circle.ms-3.user-image
+  .p-4
     p.mb-0
       strong Вениамин Редакторович
     p.small.mb-0.muted Онлайн
@@ -48,5 +48,5 @@ include components/message
 form.send-message-form.mx-md-5.d-flex.mb-3.mt-3
   input(type='text' placeholder='Напишите сообщение...').form-control.border-0.shadow-none.px-2.px-md-4
   .button(type="submit").btn.btn-primary.rounded-circle.d-flex.align-items-center.justify-content-center
-    img(src="/images/icons/cursor.svg")
+    img(src="/images/icons/cursor.svg").w-100.h-100
 
