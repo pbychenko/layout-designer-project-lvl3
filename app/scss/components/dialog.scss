@@ -1,8 +1,4 @@
 #current-chat {
-	// .dialog-header {
-	// 	height: 93px;
-	// }
-
 	.dialog-body {
 		@include hide-scrollbar;
 
@@ -28,8 +24,6 @@
 		}
 
 		img {
-			// width: 21px;
-			// height: 21px;
 			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
 		}
 	}
@@ -43,7 +37,6 @@
 		}
 
 		.dialog-body {
-			// margin-top: 49px;
 			height: calc(100vh - 95px - 12rem );
 		}
 
