@@ -7,4 +7,4 @@ mixin message(userData, bgColor='bg-light', fontColor='text-muted', align ='')
           strong= userData.name
       p.mb-0(class=fontColor)= userData.message
       hr.bg-gray      
-      p.time.mb-0(class=fontColor)= userData.time
+      p.time.mb-0(class=fontColor).small= userData.time
