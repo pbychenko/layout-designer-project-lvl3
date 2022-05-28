@@ -11290,13 +11290,9 @@ nav ul img {
   nav {
     border-top-left-radius: 0;
   }
-
-  .logo {
-    margin-right: 118px;
-  }
 }
 #contacts {
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 7.5rem);
 }
 #contacts {
   -ms-overflow-style: none;
@@ -11314,7 +11310,7 @@ nav ul img {
   }
 }
 #chats {
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 7.5rem);
 }
 #chats {
   -ms-overflow-style: none;
@@ -11341,7 +11337,7 @@ nav ul img {
   }
 }
 #profile {
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 7.5rem);
 }
 #profile {
   -ms-overflow-style: none;

@@ -1,7 +1,7 @@
 #contacts {
 	@include hide-scrollbar;
 
-	height: calc(100vh - 8rem);
+	height: calc(100vh - 7.5rem);
 }
 
 @media (max-width: $max-mob-width) {
