@@ -7,21 +7,4 @@ mixin message(userData, bgColor='bg-light', fontColor='text-muted', align ='')
           strong= userData.name
       p.mb-0(class=fontColor)= userData.message
       hr.bg-gray      
-      p.text-muted.time.mb-0.small= userData.time
-  //- if user.name == ''
-  //-     .d-flex.align-items-end.mb-3.p-0.message.mx-md-5.align-self-md-end
-  //-       img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-  //-       .p-4.message-text.ms-md-3.bg-primary.shadow-sm
-  //-         p.text-white.mb-0= user.message
-  //-         hr.bg-gray      
-  //-         p.text-muted.time.mb-0.small= user.time
-  //-   else
-  //-     .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
-  //-       img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-  //-       .p-4.message-text.ms-md-3.bg-light.shadow-sm
-  //-         p.mb-1
-  //-           strong= user.name
-  //-         p.text-muted.mb-0= user.message
-  //-         hr.bg-light        
-  //-         p.text-muted.time.mb-0.small= user.time 
-
+      p.time.mb-0(class=fontColor)= userData.time

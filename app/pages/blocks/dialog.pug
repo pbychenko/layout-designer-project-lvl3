@@ -45,22 +45,6 @@ include components/message
     else
       +message(user)
 
-    //-   .d-flex.align-items-end.mb-3.p-0.message.mx-md-5.align-self-md-end
-    //-     img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-    //-     .p-4.message-text.ms-md-3.bg-primary.shadow-sm
-    //-       p.text-white.mb-0= user.message
-    //-       hr.bg-gray      
-    //-       p.text-muted.time.mb-0.small= user.time
-    //- else
-    //-   .d-flex.align-items-end.mb-3.p-0.message.mx-md-5
-    //-     img(src=user.avatar).rounded-circle.d-none.d-sm-none.d-md-block
-    //-     .p-4.message-text.ms-md-3.bg-light.shadow-sm
-    //-       p.mb-1
-    //-         strong= user.name
-    //-       p.text-muted.mb-0= user.message
-    //-       hr.bg-light        
-    //-       p.text-muted.time.mb-0.small= user.time  
-
 form.send-message-form.mx-md-5.d-flex.mb-3.mt-3
   input(type='text' placeholder='Напишите сообщение...').form-control.border-0.shadow-none.px-2.px-md-4
   .button(type="submit").btn.btn-primary.rounded-circle.d-flex.align-items-center.justify-content-center
