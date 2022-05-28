@@ -11272,6 +11272,20 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   width: 90px;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  max-height: 100vh;
+}
+
 nav {
   height: 4.5rem;
   border-top-left-radius: 1rem;
@@ -11294,15 +11308,6 @@ nav ul img {
 #contacts {
   height: calc(100vh - 7.5rem);
 }
-#contacts {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#contacts::-webkit-scrollbar {
-  display: none;
-}
 
 @media (max-width: 414px) {
   #contacts {
@@ -11311,15 +11316,6 @@ nav ul img {
 }
 #chats {
   height: calc(100vh - 7.5rem);
-}
-#chats {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#chats::-webkit-scrollbar {
-  display: none;
 }
 #chats .message {
   white-space: nowrap;
@@ -11338,15 +11334,6 @@ nav ul img {
 }
 #profile {
   height: calc(100vh - 7.5rem);
-}
-#profile {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#profile::-webkit-scrollbar {
-  display: none;
 }
 
 @media (max-width: 414px) {

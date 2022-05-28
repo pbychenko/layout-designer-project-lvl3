@@ -1,6 +1,4 @@
 #chats {
-	@include hide-scrollbar;
-
 	height: calc(100vh - 7.5rem);
 	.message {
 		white-space: nowrap;
