@@ -1,24 +1,25 @@
 nav {
-	height: 4.5rem;
-	border-top-left-radius: 1rem;
-	
-	img {
-		filter: brightness(0) invert(1);
-	}
+  height: 4.5rem;
+  
+  border-top-left-radius: 1rem;
+  
+  img {
+    filter: brightness(0) invert(1);
+  }
 
-	img {
-		height: 25px;
-	}
+  img {
+    height: 25px;
+  }
 
-	ul img {
-		width: 25px;
-	}
+  ul img {
+    width: 25px;
+  }
 }
 
 
 @media (max-width: $max-mob-width) {
-	nav {
-		border-top-left-radius: 0;
-	}
+  nav {
+    border-top-left-radius: 0;
+  }
 }
 

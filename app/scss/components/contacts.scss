@@ -1,10 +1,10 @@
 #contacts {
-	height: calc(100vh - 7.5rem);
+  height: calc(100vh - 7.5rem);
 }
 
 @media (max-width: $max-mob-width) {
-	#contacts {
-		height: calc(100vh - 4.5rem);
-	}
+  #contacts {
+    height: calc(100vh - 4.5rem);
+  }
 }
 

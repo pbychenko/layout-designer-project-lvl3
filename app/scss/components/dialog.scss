@@ -1,55 +1,55 @@
 #current-chat {
-	.dialog-body {
-		@include hide-scrollbar;
+  .dialog-body {
+    @include hide-scrollbar;
 
-		height: calc(100vh - 7rem - 163px);
-	}
+    height: calc(100vh - 7rem - 163px);
+  }
 
-	.message {
-		max-width: 624px;
-	}
+  .message {
+    max-width: 624px;
+  }
 
-	.message-text {
-		border-radius: 1rem;
-	}
+  .message-text {
+    border-radius: 1rem;
+  }
 
-	.time {
-		opacity: 60%;
-	}
-	
-	form {
-		.button {
-			width: 50px;
-			height: 50px;
-		}
+  .time {
+    opacity: 60%;
+  }
+  
+  form {
+    .button {
+      width: 50px;
+      height: 50px;
+    }
 
-		img {
-			filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
-		}
-	}
+    img {
+      filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
+    }
+  }
 }
 
 @media (max-width: $max-mob-width) {
-	#current-chat {
-		.dialog-header {
-			margin-left: -24px;
-			margin-right: -24px;
-		}
+  #current-chat {
+    .dialog-header {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
 
-		.dialog-body {
-			height: calc(100vh - 95px - 12rem );
-		}
+    .dialog-body {
+      height: calc(100vh - 95px - 12rem );
+    }
 
-		.message {
-			width: 100%;
-		}
+    .message {
+      width: 100%;
+    }
 
-		form {
-			.button {
-				width: 42px;
-				height: 42px;
-			}
-		}
-	}
+    form {
+      .button {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
 }
 

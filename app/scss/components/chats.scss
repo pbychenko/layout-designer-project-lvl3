@@ -1,21 +1,21 @@
 #chats {
   height: calc(100vh - 7.5rem);
 
-	.message {
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			width: 286px;
-	}
+  .message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 286px;
+  }
 }
 
 @media (max-width: $max-mob-width) {
-		#chats {
-			height: calc(100vh - 4.5rem);
+    #chats {
+      height: calc(100vh - 4.5rem);
 
-			.message {
-					width: 236px;
-			}
-		}
+      .message {
+          width: 236px;
+      }
+    }
 }
 
