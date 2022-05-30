@@ -38,7 +38,7 @@ include components/message
     p.mb-0
       strong Вениамин Редакторович
     p.small.mb-0.muted Онлайн
-.mt-5.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0
+.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0.pt-5
   each user in people  
     if user.name == ''
       +message(user, 'bg-primary', 'text-white', 'align-self-md-end')
