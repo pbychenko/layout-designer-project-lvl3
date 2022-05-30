@@ -11337,17 +11337,25 @@ nav ul img {
     height: calc(100vh - 4.5rem);
   }
 }
-#current-chat .dialog-body {
-  height: calc(100vh - 7rem - 163px);
+#current-chat {
+  height: calc(100vh - 3rem);
 }
-#current-chat .dialog-body {
+#current-chat {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: auto;
   overflow-x: hidden;
 }
-#current-chat .dialog-body::-webkit-scrollbar {
+#current-chat::-webkit-scrollbar {
   display: none;
+}
+#current-chat .dialog-body {
+  z-index: 1;
+}
+#current-chat .dialog-header {
+  position: sticky;
+  top: -1px;
+  z-index: 2;
 }
 #current-chat .message {
   max-width: 624px;
@@ -11367,12 +11375,12 @@ nav ul img {
 }
 
 @media (max-width: 414px) {
+  #current-chat {
+    height: calc(100vh - 4.5rem);
+  }
   #current-chat .dialog-header {
     margin-left: -24px;
     margin-right: -24px;
-  }
-  #current-chat .dialog-body {
-    height: calc(100vh - 95px - 12rem);
   }
   #current-chat .message {
     width: 100%;
