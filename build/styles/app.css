@@ -11294,15 +11294,13 @@ aside {
 nav {
   position: sticky;
   top: 0;
-  border-top-left-radius: 1rem;
   z-index: 2;
   order: 1;
-}
-nav img {
-  filter: brightness(0) invert(1);
+  border-top-left-radius: 1rem;
 }
 nav img {
   height: 25px;
+  filter: brightness(0) invert(1);
 }
 nav ul img {
   width: 25px;
@@ -11310,17 +11308,17 @@ nav ul img {
 
 @media (max-width: 414px) {
   nav {
-    border-top-left-radius: 0;
     position: sticky;
     bottom: 0;
     order: 2;
+    border-top-left-radius: 0;
   }
 }
 #chats .message {
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   width: 286px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 414px) {
@@ -11355,7 +11353,7 @@ nav ul img {
   border-radius: 1rem;
 }
 #current-chat .time {
-  opacity: 60%;
+  opacity: 0.6;
 }
 #current-chat form {
   position: sticky;
@@ -11375,8 +11373,8 @@ nav ul img {
     height: calc(100vh - 4.5rem);
   }
   #current-chat .dialog-header {
-    margin-left: -24px;
     margin-right: -24px;
+    margin-left: -24px;
   }
   #current-chat .message {
     width: 100%;

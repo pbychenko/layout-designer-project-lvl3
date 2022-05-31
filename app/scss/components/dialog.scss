@@ -22,11 +22,10 @@
   }
 
   .time {
-    opacity: 60%;
+    opacity: 0.6;
   }
-  
+
   form {
-    // padding-top: 24px;
     position: sticky;
     bottom: 0;
     z-index: 2;
@@ -45,14 +44,11 @@
 @media (max-width: $max-mob-width) {
   #current-chat {
     height: calc(100vh - 4.5rem);
-    .dialog-header {
-      margin-left: -24px;
-      margin-right: -24px;
-    }
 
-    // .dialog-body {
-      // height: calc(100vh - 95px - 12rem );
-    // }
+    .dialog-header {
+      margin-right: -24px;
+      margin-left: -24px;
+    }
 
     .message {
       width: 100%;
@@ -66,4 +62,3 @@
     }
   }
 }
-

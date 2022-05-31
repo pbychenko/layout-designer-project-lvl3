@@ -1,32 +1,31 @@
 nav {
   position: sticky;
   top: 0;
-  border-top-left-radius: 1rem;
+
   z-index: 2;
-  
-  img {
-    filter: brightness(0) invert(1);
-  }
+
+  order: 1;
+
+  border-top-left-radius: 1rem;
 
   img {
     height: 25px;
+
+    filter: brightness(0) invert(1);
   }
 
   ul img {
     width: 25px;
   }
-  order: 1;
 }
-
 
 @media (max-width: $max-mob-width) {
   nav {
-    border-top-left-radius: 0;
     position: sticky;
     bottom: 0;
+
     order: 2;
+
+    border-top-left-radius: 0;
   }
-
-  
 }
-
