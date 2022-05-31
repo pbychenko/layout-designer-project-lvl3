@@ -11358,8 +11358,8 @@ nav ul img {
   }
 }
 #chats .message {
-  overflow: hidden;
   width: 286px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
