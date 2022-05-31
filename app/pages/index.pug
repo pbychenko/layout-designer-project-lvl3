@@ -9,7 +9,7 @@ head
   link(rel='stylesheet' href='./styles/app.css')      
 body.container-xxl.p-0.bg-gray
   .content.p-md-4
-    .row.bg-white.m-0
+    .row.bg-white.m-0.radius
       aside.col-12.col-md-4.d-flex.flex-column.p-0.hide-scrollbar.flex-nowrap.justify-content-between.justify-content-md-start
         +menu(false)
         .tab-content.px-4.order-md-1
@@ -19,7 +19,7 @@ body.container-xxl.p-0.bg-gray
             include blocks/chats.pug
           #profile.tab-pane.fade
             include blocks/profile.pug
-      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none.bg-white
+      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none.bg-white.radius-right
         .text-center
           img(src="../images/avatar_1.jpg").rounded-circle
           p.mb-0

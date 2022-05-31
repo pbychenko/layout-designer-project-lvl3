@@ -1,24 +1,33 @@
-// @import "../../../node_modules/bootstrap/scss/functions";
-// @import "../../../node_modules/bootstrap/scss/variables";
-// @import "../../../node_modules/bootstrap/scss/utilities";
-
-
-.radius-left-top {
-  border-top-left-radius: 1rem;
-}
+// .radius-left-top {
+//   border-top-left-radius: 1rem;
+// }
 
 .radius-left {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+
+  @media (max-width: $max-mob-width) {
+		border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	}
 }
 
 .radius-right {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+
+  @media (max-width: $max-mob-width) {
+		border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+	}
 }
 
 .radius {
   border-radius: 1rem;
+
+  @media (max-width: $max-mob-width) {
+		border-radius: 0;
+	}
 }
 
 .border-md-bottom {
@@ -32,6 +41,7 @@
 .border-sm {
   border: 1px solid #efefef !important;
 }
+
 // $utilities: map-merge(
 //   $utilities,
 //   (

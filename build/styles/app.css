@@ -11285,12 +11285,55 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
 aside {
   height: calc(100vh - 3rem);
 }
-
 @media (max-width: 414px) {
   aside {
     height: 100vh;
   }
 }
+
+.radius-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+@media (max-width: 414px) {
+  .radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.radius-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+@media (max-width: 414px) {
+  .radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.radius {
+  border-radius: 1rem;
+}
+@media (max-width: 414px) {
+  .radius {
+    border-radius: 0;
+  }
+}
+
+.border-md-bottom {
+  border-bottom: 1px solid #efefef !important;
+}
+
+.border-lg-top {
+  border-top: 1px solid #efefef !important;
+}
+
+.border-sm {
+  border: 1px solid #efefef !important;
+}
+
 nav {
   position: sticky;
   top: 0;
