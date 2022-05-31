@@ -1,7 +1,8 @@
 nav {
-  height: 4.5rem;
-  
+  position: sticky;
+  top: 0;
   border-top-left-radius: 1rem;
+  z-index: 2;
   
   img {
     filter: brightness(0) invert(1);
@@ -14,12 +15,18 @@ nav {
   ul img {
     width: 25px;
   }
+  order: 1;
 }
 
 
 @media (max-width: $max-mob-width) {
   nav {
     border-top-left-radius: 0;
+    position: sticky;
+    bottom: 0;
+    order: 2;
   }
+
+  
 }
 

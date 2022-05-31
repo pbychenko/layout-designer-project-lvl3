@@ -11282,9 +11282,21 @@ h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
   display: none;
 }
 
+aside {
+  height: calc(100vh - 3rem);
+}
+
+@media (max-width: 414px) {
+  aside {
+    height: 100vh;
+  }
+}
 nav {
-  height: 4.5rem;
+  position: sticky;
+  top: 0;
   border-top-left-radius: 1rem;
+  z-index: 2;
+  order: 1;
 }
 nav img {
   filter: brightness(0) invert(1);
@@ -11299,19 +11311,10 @@ nav ul img {
 @media (max-width: 414px) {
   nav {
     border-top-left-radius: 0;
+    position: sticky;
+    bottom: 0;
+    order: 2;
   }
-}
-#contacts {
-  height: calc(100vh - 7.5rem);
-}
-
-@media (max-width: 414px) {
-  #contacts {
-    height: calc(100vh - 4.5rem);
-  }
-}
-#chats {
-  height: calc(100vh - 7.5rem);
 }
 #chats .message {
   white-space: nowrap;
@@ -11321,20 +11324,8 @@ nav ul img {
 }
 
 @media (max-width: 414px) {
-  #chats {
-    height: calc(100vh - 4.5rem);
-  }
   #chats .message {
     width: 236px;
-  }
-}
-#profile {
-  height: calc(100vh - 7.5rem);
-}
-
-@media (max-width: 414px) {
-  #profile {
-    height: calc(100vh - 4.5rem);
   }
 }
 #current-chat {
@@ -11354,7 +11345,7 @@ nav ul img {
 }
 #current-chat .dialog-header {
   position: sticky;
-  top: -1px;
+  top: 0;
   z-index: 2;
 }
 #current-chat .message {
@@ -11368,7 +11359,7 @@ nav ul img {
 }
 #current-chat form {
   position: sticky;
-  bottom: -1px;
+  bottom: 0;
   z-index: 2;
 }
 #current-chat form .button {

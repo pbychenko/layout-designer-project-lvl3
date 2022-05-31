@@ -10,9 +10,9 @@ head
 body.container-xxl.p-0.bg-gray
   .content.p-md-4
     .row.bg-white.m-0
-      aside.col-12.col-md-4.d-flex.flex-column-reverse.flex-md-column.p-0
+      aside.col-12.col-md-4.d-flex.flex-column.p-0.hide-scrollbar.flex-nowrap.justify-content-between.justify-content-md-start
         +menu(true, '', 'active')
-        .tab-content.px-4.hide-scrollbar
+        .tab-content.px-4.order-md-1
           #current-chat.tab-pane.fade
             include blocks/dialog.pug      
           #contacts.tab-pane.fade
