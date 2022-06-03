@@ -1,4 +1,4 @@
-nav {
+.menu {
   position: sticky;
   top: 0;
 
@@ -17,14 +17,12 @@ nav {
   ul img {
     width: 25px;
   }
-}
 
-@media (max-width: $max-mob-width) {
-  nav {
+  @media (max-width: $max-mob-width) {
     position: sticky;
     bottom: 0;
 
-    order: 2;
+    // order: 2;
 
     border-top-left-radius: 0;
   }
