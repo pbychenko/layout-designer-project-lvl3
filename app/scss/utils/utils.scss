@@ -1,7 +1,3 @@
-// .radius-left-top {
-//   border-top-left-radius: 1rem;
-// }
-
 .radius-left {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -41,24 +37,3 @@
 .border-sm {
   border: 1px solid #efefef !important;
 }
-
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "transition": (
-//       property: transition,
-//       class: transition,
-//       values: (
-//         05: all 0.5s,
-//         1: all 1s,
-//         15: all 1.5s,
-//         2: all 2s,
-//       ),
-//     ),
-//     "shadow":
-//       map-merge(
-//         map-get($utilities, "shadow"),
-//         ( state: hover ),
-//     ),
-//   ),
-// );
