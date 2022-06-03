@@ -14,7 +14,7 @@ body.container-xxl.p-0.bg-gray
         +menu(true, '', 'active')
         .tab-content.px-4.order-md-1
           #current-chat.tab-pane.fade
-            include blocks/dialog.pug      
+            include blocks/current-chat.pug      
           #contacts.tab-pane.fade
             include blocks/contacts.pug
           #chats.tab-pane.fade.show.active
@@ -22,5 +22,5 @@ body.container-xxl.p-0.bg-gray
           #profile.tab-pane.fade
             include blocks/profile.pug
       #current-chat.col-md-8.p-0.d-none.d-sm-none.border.border-gray.d-md-block.radius-right
-        include blocks/dialog.pug
+        include blocks/current-chat.pug
 script(src="js/bootstrap.bundle.min.js")

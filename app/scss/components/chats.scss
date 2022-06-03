@@ -1,5 +1,5 @@
 #chats {
-  .message {
+  .chats-message {
     width: 286px;
 
     overflow: hidden;
@@ -12,7 +12,7 @@
 
 @media (max-width: $max-mob-width) {
   #chats {
-    .message {
+    .chats-message {
       width: 236px;
     }
   }

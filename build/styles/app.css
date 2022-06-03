@@ -11318,7 +11318,7 @@ nav ul img {
     border-top-left-radius: 0;
   }
 }
-#chats .message {
+#chats .chats-message {
   width: 286px;
   overflow: hidden;
   white-space: nowrap;
@@ -11326,7 +11326,7 @@ nav ul img {
 }
 
 @media (max-width: 414px) {
-  #chats .message {
+  #chats .chats-message {
     width: 236px;
   }
 }
@@ -11355,6 +11355,16 @@ nav ul img {
 }
 #current-chat .message-text {
   border-radius: 1rem;
+}
+#current-chat .message-text .testi::after {
+  content: "";
+  position: relative;
+  top: 0.5rem;
+  width: 100%;
+  height: 1px;
+  background-color: #EFEFEF;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 #current-chat .time {
   opacity: 0.6;
