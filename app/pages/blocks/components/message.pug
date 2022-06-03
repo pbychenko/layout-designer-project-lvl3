@@ -5,6 +5,6 @@ mixin message(userData, bgColor='bg-light', fontColor='text-muted', align ='')
       if userData.name != ''
         p.mb-1
           strong= userData.name
-      p.mb-0(class=fontColor).testi= userData.message
-      //- hr.bg-gray.mb-1.mt-2      
+      p.mb-0(class=fontColor)= userData.message
+      hr.bg-gray.mb-1.mt-2      
       p.time.mb-0(class=fontColor).small= userData.time
