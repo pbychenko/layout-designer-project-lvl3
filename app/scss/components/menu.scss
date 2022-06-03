@@ -4,10 +4,6 @@
 
   z-index: 2;
 
-  order: 1;
-
-  border-top-left-radius: 1rem;
-
   img {
     height: 25px;
 
@@ -19,11 +15,6 @@
   }
 
   @media (max-width: $max-mob-width) {
-    position: sticky;
     bottom: 0;
-
-    // order: 2;
-
-    border-top-left-radius: 0;
   }
 }

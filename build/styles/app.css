@@ -11263,6 +11263,15 @@ aside {
   }
 }
 
+.radius-top-left {
+  border-top-left-radius: 1rem;
+}
+@media (max-width: 414px) {
+  .radius-top-left {
+    border-top-left-radius: 0;
+  }
+}
+
 .radius-right {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -11299,8 +11308,6 @@ aside {
   position: sticky;
   top: 0;
   z-index: 2;
-  order: 1;
-  border-top-left-radius: 1rem;
 }
 .menu img {
   height: 25px;
@@ -11311,9 +11318,7 @@ aside {
 }
 @media (max-width: 414px) {
   .menu {
-    position: sticky;
     bottom: 0;
-    border-top-left-radius: 0;
   }
 }
 

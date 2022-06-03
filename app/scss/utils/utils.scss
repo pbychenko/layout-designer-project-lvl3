@@ -8,6 +8,14 @@
   }
 }
 
+.radius-top-left {
+  border-top-left-radius: 1rem;
+
+  @media (max-width: $max-mob-width) {
+    border-top-left-radius: 0;
+  }
+}
+
 .radius-right {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
