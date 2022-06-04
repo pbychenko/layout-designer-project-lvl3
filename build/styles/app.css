@@ -11384,7 +11384,7 @@ aside {
 
 @media (max-width: 414px) {
   #current-chat {
-    height: calc(100vh - 4.5rem - 1px);
+    height: calc(100vh - 4.5rem - 2px);
   }
   #current-chat .current-chat-header {
     margin-right: -24px;
