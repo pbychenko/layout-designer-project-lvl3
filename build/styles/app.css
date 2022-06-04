@@ -11328,12 +11328,18 @@ aside {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
+#chats .user-name {
+  width: 251px;
+}
 @media (max-width: 414px) {
-  #chats .chats-message {
+  #chats .chat-message {
     width: 236px;
   }
+  #chats .user-name {
+    width: 204px;
+  }
 }
+
 #current-chat {
   height: calc(100vh - 3rem);
 }

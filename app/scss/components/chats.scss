@@ -8,12 +8,18 @@
 
     text-overflow: ellipsis;
   }
-}
 
-@media (max-width: $max-mob-width) {
-  #chats {
-    .chats-message {
+  .user-name {
+    width: 251px;
+  }
+
+  @media (max-width: $max-mob-width) {
+    .chat-message {
       width: 236px;
+    }
+
+    .user-name {
+      width: 204px;
     }
   }
 }

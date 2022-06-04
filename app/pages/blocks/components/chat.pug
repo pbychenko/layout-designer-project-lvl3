@@ -5,7 +5,9 @@ mixin chat(userData)
         img(src=userData.avatar).user-image.rounded-circle
         .d-flex.align-items-center
           .chat-body.p-4
-            p.user-name.mb-0
-              strong= userData.name
+            .d-flex
+              p.user-name.mb-0
+                strong= userData.name
+              p.text-muted.small.message-time.mb-0= userData.time
             p.small.text-muted.mb-0.chat-message= userData.message               
-          p.text-muted.small.message-time= userData.time
+          
