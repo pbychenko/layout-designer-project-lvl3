@@ -3,7 +3,7 @@ mixin message(messageData, bgColor='bg-light', fontColor='text-muted', align =''
     img(src=messageData.userAvatar).rounded-circle.d-none.d-sm-none.d-md-block.user-image
     .p-4.message-body.ms-md-3(class=bgColor)
       if messageData.userName != ''
-        p.mb-0.user-name
+        p.mb-1.user-name
           strong= messageData.userName
       p.message-text.mb-0(class=fontColor)= messageData.message
       hr.bg-gray.mb-1.mt-2      
