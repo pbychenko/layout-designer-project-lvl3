@@ -1,10 +1,10 @@
-mixin message(userData, bgColor='bg-light', fontColor='text-muted', align ='')
+mixin message(messageData, bgColor='bg-light', fontColor='text-muted', align ='')
   .d-flex.align-items-end.mb-3.p-0.message.mx-md-5(class=align)
-    img(src=userData.avatar).rounded-circle.d-none.d-sm-none.d-md-block.user-image
-    .p-4.message-text.ms-md-3.shadow-sm(class=bgColor)
-      if userData.name != ''
-        p.mb-1
-          strong= userData.name
-      p.mb-0(class=fontColor)= userData.message
+    img(src=messageData.userAvatar).rounded-circle.d-none.d-sm-none.d-md-block.user-image
+    .p-4.message-body.ms-md-3(class=bgColor)
+      if messageData.userName != ''
+        p.mb-0.user-name
+          strong= messageData.userName
+      p.message-text.mb-0(class=fontColor)= messageData.message
       hr.bg-gray.mb-1.mt-2      
-      p.time.mb-0(class=fontColor).small= userData.time
+      p.time.mb-0(class=fontColor).small= messageData.time

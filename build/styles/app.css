@@ -11346,10 +11346,10 @@ aside {
 #current-chat::-webkit-scrollbar {
   display: none;
 }
-#current-chat .dialog-body {
+#current-chat .current-chat-body {
   z-index: 1;
 }
-#current-chat .dialog-header {
+#current-chat .current-chat-header {
   position: sticky;
   top: 0;
   z-index: 2;
@@ -11357,22 +11357,22 @@ aside {
 #current-chat .message {
   max-width: 624px;
 }
-#current-chat .message-text {
+#current-chat .message-body {
   border-radius: 1rem;
 }
 #current-chat .time {
   opacity: 0.6;
 }
-#current-chat form {
+#current-chat .send-message-form {
   position: sticky;
   bottom: 0;
   z-index: 2;
 }
-#current-chat form .button {
+#current-chat .send-message-form .button {
   width: 50px;
   height: 50px;
 }
-#current-chat form img {
+#current-chat .send-message-form img {
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(111%) contrast(97%);
 }
 
@@ -11380,14 +11380,14 @@ aside {
   #current-chat {
     height: calc(100vh - 4.5rem);
   }
-  #current-chat .dialog-header {
+  #current-chat .current-chat-header {
     margin-right: -24px;
     margin-left: -24px;
   }
   #current-chat .message {
     width: 100%;
   }
-  #current-chat form .button {
+  #current-chat .send-message-form .button {
     width: 42px;
     height: 42px;
   }

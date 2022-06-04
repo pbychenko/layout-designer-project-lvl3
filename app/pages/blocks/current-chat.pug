@@ -1,49 +1,49 @@
 -
-  var people = [{
-      name: "Вениамин Редакторович",
+  var messages = [{
+      userName: "Вениамин Редакторович",
       message: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
-      avatar: "/images/avatar_4.jpg",
+      userAvatar: "/images/avatar_4.jpg",
       time: "8 минут назад"
     },
     {
-      name: "",
+      userName: "",
       message: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
-      avatar: "/images/avatar_1.jpg",
+      userAvatar: "/images/avatar_1.jpg",
       time: "5 минут назад"
     },
     {
-      name: "Вениамин Редакторович",
+      userName: "Вениамин Редакторович",
       message: "Лады",
-      avatar: "/images/avatar_4.jpg",
+      userAvatar: "/images/avatar_4.jpg",
       time: "5 минут назад"
     },
     {
-      name: "",
+      userName: "",
       message: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
-      avatar: "/images/avatar_1.jpg",
+      userAvatar: "/images/avatar_1.jpg",
       time: "3 минуты назад"
     },
     {
-      name: "Вениамин Редакторович",
+      userName: "Вениамин Редакторович",
       message: "о_О",
-      avatar: "/images/avatar_4.jpg",
+      userAvatar: "/images/avatar_4.jpg",
       time: "Только что"
     }]
 
 include components/message
 
-.dialog-header.d-flex.align-items-center.border-bottom.border-gray.bg-white
+.current-chat-header.d-flex.align-items-center.border-bottom.border-gray.bg-white
   img(src="/images/avatar_4.jpg").rounded-circle.ms-3.user-image
-  .p-4
-    p.mb-0
+  .contact-data.p-4
+    p.user-name.mb-0
       strong Вениамин Редакторович
-    p.small.mb-0.muted Онлайн
-.dialog-body.mx-0.d-flex.flex-column.px-4.px-md-0.pt-5
-  each user in people  
-    if user.name == ''
-      +message(user, 'bg-primary', 'text-white', 'align-self-md-end')
+    p.user-status.small.mb-0.text-muted Онлайн
+.current-chat-body.mx-0.d-flex.flex-column.px-4.px-md-0.pt-5
+  each messageData in messages  
+    if messageData.userName == ''
+      +message(messageData, 'bg-primary', 'text-white', 'align-self-md-end')
     else
-      +message(user)
+      +message(messageData)
 
 form.send-message-form.mx-md-5.d-flex.py-md-3.bg-white.my-md-4.py-3
   input(type='text' placeholder='Напишите сообщение...').form-control.border-0.shadow-none.px-2.px-md-4.py-md-3
