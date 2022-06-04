@@ -45,9 +45,6 @@ h2.mb-4.pt-5 Контакты
 
 each people, letter in contacts
   p.text-muted.letter= letter
-  ul.list-group.list-group-flush.mb-5
-    each user in people        
-      li.list-group-item.py-0.shadow-sm
-        a(href="#").text-decoration-none.link-dark
-          .d-flex.align-items-center
-            +contact(user)
+  ul.contacts-list.list-group.list-group-flush.mb-5
+    each user in people  
+      +contact(user)

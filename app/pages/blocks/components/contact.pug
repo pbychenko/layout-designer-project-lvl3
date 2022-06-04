@@ -1,6 +1,9 @@
 mixin contact(userData)
-  img(src=userData.avatar).user-image.rounded-circle
-  .p-4
-    p.mb-0
-      strong= userData.name
-    p.small.mb-0= userData.status
+  li.contact.list-group-item.py-0.shadow-sm
+    a(href="#").text-decoration-none.link-dark
+      .d-flex.align-items-center
+        img(src=userData.avatar).user-image.rounded-circle
+        .contact-data.p-4
+          p.mb-0
+            strong= userData.name
+          p.small.mb-0= userData.status
