@@ -20,22 +20,16 @@
       image: "../images/icons/people.svg",
     }]
 
-mixin profileContacts(contactData)
-  li.list-group-item.d-flex.justify-content-between
-    div.mb-2
-      p.text-muted.mb-0.small= contactData.title
-      p.mb-0.small= contactData.data
-    img(src=contactData.image)
-
 include components/form
+include components/profileContact
 
 h2.mb-4.pt-5 Профиль
 +form('Поиск по сообщениям...')
-.card.d-flex.align-items-center.mb-3.border-0.py-3
+.profile-body.card.d-flex.align-items-center.mb-3.border-0.py-3
   img(src="../images/avatar_1.jpg").profile-image.rounded-circle
   .card-body.text-center
     h6 Кодовёнок Хекслетович
     p.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-ul.list-group.list-group-flush.py-3
+ul.profile-contacts.list-group.list-group-flush.py-3
   each contact in contactsData
-    +profileContacts(contact) 
+    +profileContact(contact) 

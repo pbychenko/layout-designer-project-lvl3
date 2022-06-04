@@ -1,0 +1,6 @@
+mixin profileContact(contactData)
+  li.list-group-item.d-flex.justify-content-between
+    .mb-2
+      p.text-muted.mb-0.small= contactData.title
+      p.mb-0.small= contactData.data
+    img(src=contactData.image)
