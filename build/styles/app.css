@@ -11322,7 +11322,7 @@ aside {
   }
 }
 
-#chats .chats-message {
+#chats .chat-message {
   width: 286px;
   overflow: hidden;
   white-space: nowrap;

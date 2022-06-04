@@ -1,5 +1,5 @@
 -
-  var people = [{
+  var chats = [{
       name: "Вениамин Редакторович",
       message: "o_O",
       avatar: "/images/avatar_4.jpg",
@@ -25,9 +25,6 @@ include components/form
 h2.mb-4.pt-5 Чаты
 +form('Поиск по сообщениям...')
 
-ul.list-group.list-group-flush.mb-5
-  each user in people        
-    li.list-group-item.mb-3.py-0.shadow-sm
-      a(href="#").text-decoration-none.link-dark
-        .d-flex.align-items-center
-          +chat(user)
+ul.chats-list.list-group.list-group-flush.mb-5
+  each chat in chats 
+    +chat(chat)
