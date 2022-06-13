@@ -1,52 +1,4 @@
-// .radius-left {
-//   border-top-left-radius: 1rem;
-//   border-bottom-left-radius: 1rem;
-
-//   @media (max-width: $max-mob-width) {
-//     border-top-left-radius: 0;
-//     border-bottom-left-radius: 0;
-//   }
-// }
-
-// .radius-top-left {
-//   border-top-left-radius: 1rem;
-
-//   @media (max-width: $max-mob-width) {
-//     border-top-left-radius: 0;
-//   }
-// }
-
-// .radius-right {
-//   border-top-right-radius: 1rem;
-//   border-bottom-right-radius: 1rem;
-
-//   @media (max-width: $max-mob-width) {
-//     border-top-right-radius: 0;
-//     border-bottom-right-radius: 0;
-//   }
-// }
-
-// .radius {
-//   border-radius: 1rem;
-
-//   @media (max-width: $max-mob-width) {
-//     border-radius: 0;
-//   }
-// }
-
-// .border-md-bottom {
-//   border-bottom: 1px solid #efefef !important;
-// }
-
-// .border-lg-top {
-//   border-top: 1px solid #efefef !important;
-// }
-
-// .border-sm {
-//   border: 1px solid #efefef !important;
-// }
-
-$utilities: map-merge(
+$utilities: map.merge(
   $utilities,
   (
     "radius": (
@@ -55,16 +7,7 @@ $utilities: map-merge(
       class: radius,
       values: (
         null: 1rem,
-        0: 0rem,
-      ),
-    ),
-    "radius-left": (
-      property: border-top-left-radius border-bottom-left-radius,
-      responsive: true,
-      class: radius-left,
-      values: (
-        null: 1rem,
-        0: 0rem,
+        0: 0,
       ),
     ),
     "radius-right": (
@@ -73,7 +16,7 @@ $utilities: map-merge(
       class: radius-right,
       values: (
         null: 1rem,
-        0: 0rem,
+        0: 0,
       ),
     ),
     "radius-left-top": (
@@ -82,8 +25,8 @@ $utilities: map-merge(
       class: radius-left-top,
       values: (
         null: 1rem,
-        0: 0rem,
+        0: 0,
       ),
     )
-  )  
+  )
 );

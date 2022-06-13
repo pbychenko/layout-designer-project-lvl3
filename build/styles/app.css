@@ -7914,16 +7914,6 @@ textarea.form-control-lg {
   border-radius: 0rem !important;
 }
 
-.radius-left {
-  border-top-left-radius: 1rem !important;
-  border-bottom-left-radius: 1rem !important;
-}
-
-.radius-left-0 {
-  border-top-left-radius: 0rem !important;
-  border-bottom-left-radius: 0rem !important;
-}
-
 .radius-right {
   border-top-right-radius: 1rem !important;
   border-bottom-right-radius: 1rem !important;
@@ -8599,16 +8589,6 @@ textarea.form-control-lg {
 
   .radius-sm-0 {
     border-radius: 0rem !important;
-  }
-
-  .radius-left-sm {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-  }
-
-  .radius-left-sm-0 {
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
   }
 
   .radius-right-sm {
@@ -9288,16 +9268,6 @@ textarea.form-control-lg {
     border-radius: 0rem !important;
   }
 
-  .radius-left-md {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-  }
-
-  .radius-left-md-0 {
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
-  }
-
   .radius-right-md {
     border-top-right-radius: 1rem !important;
     border-bottom-right-radius: 1rem !important;
@@ -9973,16 +9943,6 @@ textarea.form-control-lg {
 
   .radius-lg-0 {
     border-radius: 0rem !important;
-  }
-
-  .radius-left-lg {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-  }
-
-  .radius-left-lg-0 {
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
   }
 
   .radius-right-lg {
@@ -10662,16 +10622,6 @@ textarea.form-control-lg {
     border-radius: 0rem !important;
   }
 
-  .radius-left-xl {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-  }
-
-  .radius-left-xl-0 {
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
-  }
-
   .radius-right-xl {
     border-top-right-radius: 1rem !important;
     border-bottom-right-radius: 1rem !important;
@@ -11347,16 +11297,6 @@ textarea.form-control-lg {
 
   .radius-xxl-0 {
     border-radius: 0rem !important;
-  }
-
-  .radius-left-xxl {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-  }
-
-  .radius-left-xxl-0 {
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
   }
 
   .radius-right-xxl {
