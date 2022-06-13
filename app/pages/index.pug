@@ -10,7 +10,7 @@ head
 body.container-xxl.p-0.bg-gray
   .content.p-md-4
     .row.bg-white.m-0.radius-0.radius-md
-      aside.col-12.col-md-4.d-flex.flex-column.p-0.hide-scrollbar.flex-nowrap.justify-content-between.justify-content-md-start
+      aside.col-12.col-md-4.d-flex.flex-column.p-0.hide-scrollbar.justify-content-between.justify-content-md-start
         +menu(false)
         .tab-content.px-4.order-1.order-md-2
           #contacts.tab-pane.fade.show.active
@@ -19,7 +19,7 @@ body.container-xxl.p-0.bg-gray
             include blocks/chats.pug
           #profile.tab-pane.fade
             include blocks/profile.pug
-      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-sm-block.d-sm-none.bg-white.radius-right
+      main.col-md-8.p-0.d-md-flex.align-items-center.justify-content-center.d-none.d-md-block.bg-white.radius-right
         include blocks/avatar.pug
 script(src="js/bootstrap.bundle.min.js")
   
