@@ -1,68 +1,89 @@
-.radius-left {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+// .radius-left {
+//   border-top-left-radius: 1rem;
+//   border-bottom-left-radius: 1rem;
 
-  @media (max-width: $max-mob-width) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
+//   @media (max-width: $max-mob-width) {
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//   }
+// }
 
-.radius-top-left {
-  border-top-left-radius: 1rem;
+// .radius-top-left {
+//   border-top-left-radius: 1rem;
 
-  @media (max-width: $max-mob-width) {
-    border-top-left-radius: 0;
-  }
-}
+//   @media (max-width: $max-mob-width) {
+//     border-top-left-radius: 0;
+//   }
+// }
 
-.radius-right {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+// .radius-right {
+//   border-top-right-radius: 1rem;
+//   border-bottom-right-radius: 1rem;
 
-  @media (max-width: $max-mob-width) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-}
+//   @media (max-width: $max-mob-width) {
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+//   }
+// }
 
-.radius {
-  border-radius: 1rem;
+// .radius {
+//   border-radius: 1rem;
 
-  @media (max-width: $max-mob-width) {
-    border-radius: 0;
-  }
-}
+//   @media (max-width: $max-mob-width) {
+//     border-radius: 0;
+//   }
+// }
 
-.border-md-bottom {
-  border-bottom: 1px solid #efefef !important;
-}
+// .border-md-bottom {
+//   border-bottom: 1px solid #efefef !important;
+// }
 
-.border-lg-top {
-  border-top: 1px solid #efefef !important;
-}
+// .border-lg-top {
+//   border-top: 1px solid #efefef !important;
+// }
 
-.border-sm {
-  border: 1px solid #efefef !important;
-}
+// .border-sm {
+//   border: 1px solid #efefef !important;
+// }
 
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "transition": (
-//       property: transition,
-//       class: transition,
-//       values: (
-//         05: all 0.5s,
-//         1: all 1s,
-//         15: all 1.5s,
-//         2: all 2s,
-//       ),
-//     ),
-//     "shadow":
-//       map-merge(
-//         map-get($utilities, "shadow"),
-//         ( state: hover ),
-//     ),
-//   ),
-// );
+$utilities: map-merge(
+  $utilities,
+  (
+    "radius": (
+      property: border-radius,
+      responsive: true,
+      class: radius,
+      values: (
+        null: 1rem,
+        0: 0rem,
+      ),
+    ),
+    "radius-left": (
+      property: border-top-left-radius border-bottom-left-radius,
+      responsive: true,
+      class: radius-left,
+      values: (
+        null: 1rem,
+        0: 0rem,
+      ),
+    ),
+    "radius-right": (
+      property: border-top-right-radius border-bottom-right-radius,
+      responsive: true,
+      class: radius-right,
+      values: (
+        null: 1rem,
+        0: 0rem,
+      ),
+    ),
+    "radius-left-top": (
+      property: border-top-left-radius,
+      responsive: true,
+      class: radius-left-top,
+      values: (
+        null: 1rem,
+        0: 0rem,
+      ),
+    )
+  )  
+);

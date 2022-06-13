@@ -1,8 +1,13 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
 @import "variables.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "utils/utils.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "mixins.scss";
 @import "general.scss";
-@import "utils/utils.scss";
 @import "components/menu.scss";
 @import "components/chats.scss";
 @import "components/current-chat.scss";
