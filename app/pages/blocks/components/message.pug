@@ -1,6 +1,6 @@
 mixin message(messageData, bgColor='bg-light', fontColor='text-muted', align ='')
-  .d-flex.align-items-end.mb-3.p-0.message.mx-md-5(class=align)
-    img(src=messageData.userAvatar).rounded-circle.d-none.d-sm-none.d-md-block.user-image
+  .d-flex.align-items-end.mb-3.message.mx-md-5(class=align)
+    img(src=messageData.userAvatar).rounded-circle.d-none.d-md-block.user-image
     .p-4.message-body.ms-md-3(class=bgColor)
       if messageData.userName != ''
         p.mb-1.user-name
