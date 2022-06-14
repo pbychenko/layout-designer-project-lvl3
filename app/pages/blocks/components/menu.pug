@@ -1,18 +1,18 @@
 mixin menu(isChat=false, activeContacts = 'active', activeChats = '')
-  nav.menu.d-flex.align-items-center.px-4.bg-primary.justify-content-between.p-4.order-2.order-md-1.radius-left-top-0.radius-left-top-md
-    .logo.pe-md-5
+  nav.menu.d-flex.align-items-center.bg-primary.justify-content-between.p-4.order-2.order-md-1.radius-left-top-0.radius-left-top-md
+    .logo
       img(src='../images/icons/logo.svg')
-    ul(role="tablist").list-inline.d-flex.align-items-center.nav
+    ul(role="tablist").d-flex.align-items-center.nav
       if isChat
-        li.list-inline-item.nav-item(role="presentation").me-md-4.d-sm-block.d-md-none.me-3
+        li.list-inline-item.nav-item(role="presentation").me-md-4.d-block.d-md-none.me-3
           a(href="#current-chat", data-bs-target="#current-chat", data-bs-toggle="tab", aria-selected="false", aria-controls="#current-chat")#current-chat-tab.text-decoration-none
             img(src='../images/icons/chat-left-text.svg').me-2
             span.text-light.d-none.d-md-inline.small Диалог
-      li.list-inline-item.nav-item(role="presentation").me-md-4.me-3.mx-3.mx-md-0
+      li.list-inline-item.nav-item(role="presentation").me-md-4.mx-3.mx-md-0
         a(href="#contacts", data-bs-target="#contacts", data-bs-toggle="tab", aria-selected=!isChat, aria-controls="contacts", class=activeContacts)#contacts-tab.text-decoration-none
           img(src='../images/icons/people.svg').me-2 
           span.text-light.d-none.d-md-inline.small Контакты 
-      li.list-inline-item.nav-item(role="presentation").me-md-4.me-3.mx-3.mx-md-0
+      li.list-inline-item.nav-item(role="presentation").me-md-4.mx-3.mx-md-0
         a(href="#chats", data-bs-target="#chats", data-bs-toggle="tab", aria-selected=isChat, aria-controls="chats", class=activeChats)#chats-tab.text-decoration-none
           img(src='../images/icons/chat.svg').me-2 
           span.text-light.d-none.d-md-inline.small Сообщения  
